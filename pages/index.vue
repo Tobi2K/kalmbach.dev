@@ -9,3 +9,9 @@ export default Vue.extend({
   name: 'IndexPage',
 })
 </script>
+
+<style>
+body {
+  background-image: url(./../static/bg.svg);
+}
+</style>

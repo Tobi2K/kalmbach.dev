@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative flex items-top justify-center min-h-screen sm:items-center sm:pt-0"
+    class="relative flex items-top justify-center min-h-screen sm:items-center sm:pt-0 jumbotron"
   >
     <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css"

@@ -11,12 +11,17 @@ export default Vue.extend({
 </script>
 
 <style>
-body {
-  background-image: url(./../static/bg.svg);
-}
 
 .will-change-transform {
   will-change: transform;
+}
+
+.jumbotron {
+  min-height: 100%;
+  background-image: url(./../static/bg.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .cursor::after {

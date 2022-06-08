@@ -4,7 +4,7 @@ module.exports = {
       extend: {
         animation: {
           cursor: 'cursor .6s linear infinite alternate',
-          type: 'type 1.8s ease-out 3s 1 normal both',
+          type: 'type 1.8s ease-out 2s 1 normal both',
           'type-reverse': 'type 1.8s ease-out 0s infinite alternate-reverse both',
         },
         keyframes: {

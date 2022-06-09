@@ -1,11 +1,16 @@
 <template>
+  <div>
   <Header />
+  <Languages />
+  </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
+import Languages from '~/components/Languages.vue'
 
 export default Vue.extend({
+  components: { Languages },
   name: 'IndexPage',
 })
 </script>
@@ -20,7 +25,7 @@ export default Vue.extend({
   min-height: 100%;
   background-image: url(./../static/bg.svg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
   background-size: cover;
 }
 

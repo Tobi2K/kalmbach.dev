@@ -26,6 +26,10 @@
             <td class="border">TypeScript</td>
             <td class="border">3 Years</td>
           </tr>
+          <tr>
+            <td class="border">Python</td>
+            <td class="border">2 Years</td>
+          </tr>
         </table>
       </div>
     </div>

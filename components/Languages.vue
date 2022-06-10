@@ -1,9 +1,10 @@
 <template>
   <div
+    id="language"
     class="relative flex items-top justify-center min-h-screen sm:items-center sm:pt-0"
   >
     <div class="container max-w-4xl mx-auto sm:px-6 lg:px-8">
-      <div class="mt-8 overflow-hidden p-6 shadow">
+      <div class="mt-8 overflow-hidden p-6 shadow bg-slate-500/50 rounded">
         <header class="mb-16 group">
           <h2 class="text-2xl font-semibold">My Languages</h2>
         </header>

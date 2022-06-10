@@ -2,10 +2,6 @@
   <div
     class="relative flex items-top justify-center min-h-screen sm:items-center sm:pt-0 jumbotron"
   >
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
     <div class="container max-w-4xl mx-auto sm:px-6 lg:px-8">
       <div class="mt-8 text-white overflow-hidden p-6">
         <header class="mb-16 group">
@@ -30,11 +26,41 @@
         </p>
       </div>
     </div>
+    <button class="scroll-arrow" @click="scrollDown()">
+      <img src="~/assets/img/arrow.svg" alt="">
+    </button>
   </div>
 </template>
 
 <script>
 export default {
   name: 'HeaderJumbotron',
+  methods: {
+    scrollDown() {
+      document.getElementById("language").scrollIntoView({behavior: "smooth"})
+    }
+  }
 }
 </script>
+
+<style scoped>
+.scroll-arrow {
+  position: absolute;
+  margin: auto;
+  bottom: 5%;
+  width: 30px;
+  height: 30px;
+  animation: move 1s infinite  alternate;
+}
+
+.scroll-arrow svg {
+  display: block  !important;
+  margin: auto;
+}
+
+@keyframes move {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-15px); }
+}
+
+</style>

@@ -25,45 +25,45 @@
           projects.
         </p>
 
-        <div class="text-fader">
-          <div class="text-content">
-            <span class="line">
+        <div class="icon-list">
+          <div class="single-icon">
+            <span>
               <FAIcon icon="fa-brands fa-html5" />
             </span>
           </div>
 
-          <div class="text-content">
-            <span class="line">
+          <div class="single-icon">
+            <span>
               <FAIcon icon="fa-brands fa-css3-alt" />
             </span>
           </div>
 
-          <div class="text-content">
-            <span class="line">
+          <div class="single-icon">
+            <span>
               <FAIcon icon="fa-brands fa-js" />
             </span>
           </div>
 
-          <div class="text-content">
-            <span class="line">
+          <div class="single-icon">
+            <span>
               <FAIcon icon="fa-brands fa-node" />
             </span>
           </div>
 
-          <div class="text-content">
-            <span class="line">
+          <div class="single-icon">
+            <span>
               <FAIcon icon="fa-brands fa-python" />
             </span>
           </div>
 
-          <div class="text-content">
-            <span class="line">
+          <div class="single-icon">
+            <span>
               <FAIcon icon="fa-brands fa-vuejs" />
             </span>
           </div>
 
-          <div class="text-content">
-            <span class="line">
+          <div class="single-icon">
+            <span>
               ...
             </span>
           </div>
@@ -80,14 +80,14 @@
 export default {
   name: 'HeaderJumbotron',
   mounted() {
-    const list = document.getElementsByClassName('text-content')
-    const textFaderDelay = 3000
-    const textFaderAnimationSpeed = 500
-    function nextText(index) {
-      let hasNext = false
+    const list = document.getElementsByClassName('single-icon')
+    const timePerItem = 3500
+    const timeBetweenItems = 500
+    function nextItem(index) {
+      let isNotLast = false
 
-      if (index < list.length - 1) {
-        hasNext = true
+      if (index !== list.length - 1) {
+        isNotLast = true
       }
 
       setTimeout(function () {
@@ -95,17 +95,17 @@ export default {
         list.item(index).classList.add('out')
         setTimeout(function () {
           list.item(index).classList.remove('out')
-          if (hasNext) {
+          if (isNotLast) {
             list.item(index + 1).classList.add('in')
-            nextText(index + 1)
+            nextItem(index + 1)
           } else {
             list.item(0).classList.add('in')
-            nextText(0)
+            nextItem(0)
           }
-        }, textFaderAnimationSpeed)
-      }, textFaderDelay)
+        }, timeBetweenItems)
+      }, timePerItem)
     }
-    nextText(0)
+    nextItem(0)
   },
   methods: {
     scrollDown() {
@@ -139,31 +139,30 @@ export default {
   }
 }
 
-.text-fader .text-content {
+.icon-list .single-icon {
   font-size: 2em;
   font-weight: bold;
-  color: #fff;
 }
 
-.text-fader .text-content span.line {
+.icon-list .single-icon span {
   opacity: 0;
   animation-fill-mode: forwards;
   animation-timing-function: ease;
-  animation-duration: 0.8s;
+  animation-duration: 1s;
   display: none;
 }
 
-.text-fader .text-content.in span.line {
-  animation-name: textFaderIn;
+.icon-list .single-icon.in span {
+  animation-name: fadeIn;
   display: block;
 }
 
-.text-fader .text-content.out span.line {
-  animation-name: textFaderOut;
+.icon-list .single-icon.out span {
+  animation-name: fadeOut;
   display: block;
 }
 
-@keyframes textFaderIn {
+@keyframes fadeIn {
   from {
     opacity: 0;
     transform: translateY(25%);
@@ -174,7 +173,7 @@ export default {
   }
 }
 
-@keyframes textFaderOut {
+@keyframes fadeOut {
   from {
     opacity: 1;
     transform: translateY(0);

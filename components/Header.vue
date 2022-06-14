@@ -26,7 +26,7 @@
         </p>
 
         <div class="icon-list">
-          <div class="single-icon">
+          <div class="single-icon in">
             <span>
               <FAIcon icon="fa-brands fa-html5" />
             </span>
@@ -63,9 +63,7 @@
           </div>
 
           <div class="single-icon">
-            <span>
-              ...
-            </span>
+            <span> ... </span>
           </div>
         </div>
       </div>

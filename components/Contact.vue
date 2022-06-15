@@ -1,12 +1,12 @@
 <template>
   <div
-    id="language"
-    class="relative flex items-top justify-center min-h-screen sm:items-center sm:pt-0"
+    id="contact"
+    class="relative flex items-top justify-center min-h-screen sm:items-center sm:pt-0 section-header"
   >
     <div class="container max-w-4xl mx-auto sm:px-6 lg:px-8">
       <div class="mt-8 overflow-hidden p-6 shadow bg-slate-500/50 rounded">
         <header class="mb-16 group">
-          <h2 class="text-2xl font-semibold">My Languages</h2>
+          <h2 class="text-2xl font-semibold">Contact me</h2>
         </header>
         <div class="w-full">
           <div class="grid grid-cols-4 gap-4 mt-3">
@@ -41,6 +41,6 @@
 
 <script>
 export default {
-  name: 'MyLanguages',
+  name: 'ContactMe',
 }
 </script>

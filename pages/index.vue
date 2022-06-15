@@ -2,7 +2,9 @@
   <div>
     <Nav />
     <Header />
-    <Languages />
+    <AboutMe />
+    <Projects />
+    <Contact />
   </div>
 </template>
 
@@ -14,8 +16,6 @@ import { fas } from '@fortawesome/free-solid-svg-icons'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-import Languages from '~/components/Languages.vue'
-
 library.add(fas, fab)
 
 /* add font awesome icon component */
@@ -25,6 +25,5 @@ Vue.config.productionTip = false
 
 export default Vue.extend({
   name: 'IndexPage',
-  components: { Languages },
 })
 </script>

@@ -8,9 +8,10 @@
         <div class=" col-span-10">
           <header class="mb-16 group">
             <h1 class="mb-1 font-mono text-4xl text-gray-100 md:text-6xl">
-              Hi,<br class="block md:hidden" />
+              <span class="inline-flex pt-2 h-20">Hi,<br class="block md:hidden" /></span>
               <span
-                class="inline-flex h-20 -ml-6 pt-2 overflow-x-hidden animate-type whitespace-nowrap will-change-transform"
+                id="typing-animation"
+                class="inline-flex h-20 -ml-6 overflow-x-hidden hidden whitespace-nowrap will-change-transform pt-2"
               >
                 I'm Tobi 👋
               </span>
@@ -72,7 +73,7 @@
         </div>
       </div>
     </div>
-    <button class="scroll-arrow" @click="scrollDown()">
+    <button class="scroll-arrow animate-bounce" @click="scrollDown()">
       <img src="~/assets/img/arrow.svg" alt="" />
     </button>
   </div>
@@ -111,7 +112,7 @@ export default {
   },
   methods: {
     scrollDown() {
-      document.getElementById('language').scrollIntoView({ behavior: 'smooth' })
+      document.getElementById('about-me').scrollIntoView({ behavior: 'smooth' })
     },
   },
 }
@@ -124,21 +125,11 @@ export default {
   bottom: 5%;
   width: 30px;
   height: 30px;
-  animation: move 1s infinite alternate;
 }
 
 .scroll-arrow svg {
   display: block !important;
   margin: auto;
-}
-
-@keyframes move {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-15px);
-  }
 }
 
 .icon-list .single-icon {

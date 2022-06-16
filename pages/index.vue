@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Overlay />
     <Nav />
     <Header />
     <AboutMe />

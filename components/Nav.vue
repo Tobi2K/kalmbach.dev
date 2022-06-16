@@ -2,30 +2,7 @@
   <header
     class="fixed bg-white shadow-sm z-10 top-0 w-full px-5 py-2 flex justify-between items-center"
   >
-    <div>
-      <a href="#" class="text-2xl mr-5 font-serif">kalmbach.dev</a>
-      <a
-        href="https://github.com/Tobi2K"
-        target="_blank"
-        class="px-3 rounded py-1 text-3xl"
-      >
-        <FAIcon icon="fa-brands fa-github" />
-      </a>
-      <a
-        href="https://stackoverflow.com/users/8338614/tobi2k"
-        target="_blank"
-        class="px-3 rounded py-1 text-3xl"
-      >
-        <FAIcon icon="fa-brands fa-stack-overflow" />
-      </a>
-      <a
-        href="https://www.linkedin.com/in/tobiaskalmbach/"
-        target="_blank"
-        class="px-3 rounded py-1 text-3xl"
-      >
-        <FAIcon icon="fa-brands fa-linkedin" />
-      </a>
-    </div>
+    <a href="#" class="text-2xl font-serif">kalmbach.dev</a>
     <div class="flex space-x-2 justify-center">
       <a
         href="#home"
@@ -65,7 +42,8 @@ export default {
         e.preventDefault()
 
         const element = document.querySelector(this.getAttribute('href'))
-        const topOfElementWithOffset = element.getBoundingClientRect().top + window.pageYOffset - 50
+        const topOfElementWithOffset =
+          element.getBoundingClientRect().top + window.pageYOffset - 50
 
         window.scrollTo({
           top: topOfElementWithOffset,

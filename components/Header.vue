@@ -5,10 +5,12 @@
   >
     <div class="container max-w-4xl mx-auto sm:px-6 lg:px-8">
       <div class="mt-8 text-white overflow-hidden p-6 grid grid-cols-12">
-        <div class=" col-span-10">
+        <div class="col-span-10">
           <header class="mb-16 group">
             <h1 class="mb-1 font-mono text-4xl text-gray-100 md:text-6xl">
-              <span class="inline-flex pt-2 h-20">Hi,<br class="block md:hidden" /></span>
+              <span class="inline-flex pt-2 h-20"
+                >Hi,<br class="block md:hidden"
+              /></span>
               <span
                 id="typing-animation"
                 class="inline-flex h-20 -ml-6 overflow-x-hidden hidden whitespace-nowrap will-change-transform pt-2"
@@ -28,6 +30,35 @@
             <br />
             I'm intereseted in Data Science and Theoretical Computer Science.
           </p>
+          <div class="mt-4">
+            <a
+              href="mailto:t.kalmbach35@gmail.com"
+              class="px-3 rounded py-1 text-3xl"
+            >
+              <FAIcon icon="fa-solid fa-envelope" />
+            </a>
+            <a
+              href="https://github.com/Tobi2K"
+              target="_blank"
+              class="px-3 rounded py-1 text-3xl"
+            >
+              <FAIcon icon="fa-brands fa-github" />
+            </a>
+            <a
+              href="https://stackoverflow.com/users/8338614/tobi2k"
+              target="_blank"
+              class="px-3 rounded py-1 text-3xl"
+            >
+              <FAIcon icon="fa-brands fa-stack-overflow" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/tobiaskalmbach/"
+              target="_blank"
+              class="px-3 rounded py-1 text-3xl"
+            >
+              <FAIcon icon="fa-brands fa-linkedin" />
+            </a>
+          </div>
         </div>
 
         <div class="icon-list flex justify-center align-middle">
@@ -65,10 +96,6 @@
             <span>
               <FAIcon icon="fa-brands fa-vuejs" />
             </span>
-          </div>
-
-          <div class="single-icon">
-            <span> ... </span>
           </div>
         </div>
       </div>
@@ -113,12 +140,13 @@ export default {
   methods: {
     scrollDown() {
       const element = document.getElementById('about-me')
-      const topOfElementWithOffset = element.getBoundingClientRect().top + window.pageYOffset - 50
+      const topOfElementWithOffset =
+        element.getBoundingClientRect().top + window.pageYOffset - 50
 
-        window.scrollTo({
-          top: topOfElementWithOffset,
-          behavior: 'smooth',
-        })
+      window.scrollTo({
+        top: topOfElementWithOffset,
+        behavior: 'smooth',
+      })
     },
   },
 }

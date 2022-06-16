@@ -1,38 +1,16 @@
 <template>
   <div
     id="projects"
-    class="relative flex items-top justify-center min-h-screen sm:items-center sm:pt-0 section-header bg-gray-200"
+    class="relative flex items-top justify-center sm:items-center section-header bg-gray-200 py-16"
   >
-    <div class="container max-w-4xl mx-auto sm:px-6 lg:px-8">
-      <div class="mt-8 overflow-hidden p-6 shadow bg-slate-500/50 rounded">
-        <header class="mb-16 group">
-          <h2 class="text-2xl font-semibold">Projects</h2>
-        </header>
-        <div class="w-full">
-          <div class="grid grid-cols-4 gap-4 mt-3">
-            <div class="mx-auto">
-              <img src="~/assets/img/html5.png" alt="HTML" width="50px" />
-            </div>
-            <div class="col-span-3">6 Years</div>
-          </div>
-          <div class="grid grid-cols-4 gap-4 mt-3">
-            <div class="mx-auto">
-              <img src="~/assets/img/css3.png" alt="HTML" width="50px" />
-            </div>
-            <div class="col-span-3">6 Years</div>
-          </div>
-          <div class="grid grid-cols-4 gap-4 mt-3">
-            <div class="mx-auto"></div>
-            <div class="col-span-3">6 Years</div>
-          </div>
-          <div class="grid grid-cols-4 gap-4 mt-3">
-            <div class="mx-auto"></div>
-            <div class="col-span-3">6 Years</div>
-          </div>
-          <div class="grid grid-cols-4 gap-4 mt-3">
-            <div class="mx-auto"></div>
-            <div class="col-span-3">6 Years</div>
-          </div>
+    <div class="container mx-auto sm:px-6 lg:px-8">
+      <div class="mt-8 overflow-hidden p-6 rounded">
+        <h1 class="text-center font-semibold text-3xl font-sans underline">
+          Projects
+        </h1>
+        <div class="grid grid-cols-3 gap-4 mt-8">
+          <Card title="test" desc="This is a project about stuff." :images="x" />
+          <Card title="test" desc="This is a project about stuff." :images="x" />
         </div>
       </div>
     </div>
@@ -40,7 +18,18 @@
 </template>
 
 <script>
+
+const x = [
+  '/css3.png',
+  '/html5.png',
+]
+
 export default {
   name: 'MyProjects',
+  data() {
+    return {
+      x
+    }
+  }
 }
 </script>

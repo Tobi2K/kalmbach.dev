@@ -112,7 +112,13 @@ export default {
   },
   methods: {
     scrollDown() {
-      document.getElementById('about-me').scrollIntoView({ behavior: 'smooth' })
+      const element = document.getElementById('about-me')
+      const topOfElementWithOffset = element.getBoundingClientRect().top + window.pageYOffset - 50
+
+        window.scrollTo({
+          top: topOfElementWithOffset,
+          behavior: 'smooth',
+        })
     },
   },
 }

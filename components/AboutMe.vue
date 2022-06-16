@@ -4,8 +4,8 @@
     class="relative sm:items-center sm:pt-0 section-header my-16"
   >
     <div class="container mx-auto sm:px-6 lg:px-8 mt-4">
-      <div class="mt-8 overflow-hidden p-6 shadow rounded">
-        <h1 class="text-center font-semibold text-2xl font-sans underline">
+      <div class="overflow-hidden p-6 shadow rounded">
+        <h1 class="text-center font-semibold text-3xl font-sans underline">
           About Me
         </h1>
         <div class="mb-8">

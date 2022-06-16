@@ -1,37 +1,50 @@
 <template>
   <div
     id="about-me"
-    class="relative flex items-top justify-center min-h-screen sm:items-center sm:pt-0 section-header"
+    class="relative sm:items-center sm:pt-0 section-header my-16"
   >
-    <div class="container max-w-4xl mx-auto sm:px-6 lg:px-8">
-      <div class="mt-8 overflow-hidden p-6 shadow bg-slate-500/50 rounded">
-        <header class="mb-16 group">
-          <h2 class="text-2xl font-semibold">About Me</h2>
-        </header>
-        <div class="w-full">
-          <div class="grid grid-cols-4 gap-4 mt-3">
-            <div class="mx-auto">
-              <img src="~/assets/img/html5.png" alt="HTML" width="50px" />
+    <div class="container mx-auto sm:px-6 lg:px-8 mt-4">
+      <div class="mt-8 overflow-hidden p-6 shadow rounded">
+        <h1 class="text-center font-semibold text-2xl font-sans underline">
+          About Me
+        </h1>
+        <div class="mb-8">
+          <h2 class="text-xl font-semibold text-blue-500 mb-4">
+            What do I do?
+          </h2>
+          <div class="w-full">
+            I started coding around 2016 and I am mostly self-taught. I began
+            with simple web development and later on branched out into app
+            development and data science. I'm currently studying Software
+            Engineering at
+            <a class="underline" href="https://www.uni-ulm.de/"
+              >University Ulm</a
+            >
+            where I focus on data science as well. <br />
+            <br />
+            Feel free to take a look at my preferred languages and tools below
+            or my <a class="underline" href="#projects">projects</a>.
+          </div>
+        </div>
+
+        <div class="grid grid-cols-3 gap-10">
+          <div>
+            <h2 class="text-xl font-semibold text-blue-500 mb-4 border-l-4 pl-2">Languages</h2>
+            <div class="grid grid-cols-2 gap-x-4 gap-y-3">
+              <ItemBox v-for="lang in languages" :key="lang.title" :link="lang.link" :alt="lang.alt" :title="lang.title" />
             </div>
-            <div class="col-span-3">6 Years</div>
           </div>
-          <div class="grid grid-cols-4 gap-4 mt-3">
-            <div class="mx-auto">
-              <img src="~/assets/img/css3.png" alt="HTML" width="50px" />
+          <div>
+            <h2 class="text-xl font-semibold text-blue-500 mb-4 border-l-4 pl-2">Frameworks</h2>
+            <div class="grid grid-cols-2 gap-x-4 gap-y-3">
+              <ItemBox v-for="fw in frameworks" :key="fw.title" :link="fw.link" :alt="fw.alt" :title="fw.title" />
             </div>
-            <div class="col-span-3">6 Years</div>
           </div>
-          <div class="grid grid-cols-4 gap-4 mt-3">
-            <div class="mx-auto"></div>
-            <div class="col-span-3">6 Years</div>
-          </div>
-          <div class="grid grid-cols-4 gap-4 mt-3">
-            <div class="mx-auto"></div>
-            <div class="col-span-3">6 Years</div>
-          </div>
-          <div class="grid grid-cols-4 gap-4 mt-3">
-            <div class="mx-auto"></div>
-            <div class="col-span-3">6 Years</div>
+          <div>
+            <h2 class="text-xl font-semibold text-blue-500 mb-4 border-l-4 pl-2">Tools</h2>
+            <div class="grid grid-cols-2 gap-x-4 gap-y-3">
+              <ItemBox v-for="tool in tools" :key="tool.title" :link="tool.link" :alt="tool.alt" :title="tool.title" />
+            </div>
           </div>
         </div>
       </div>
@@ -40,7 +53,17 @@
 </template>
 
 <script>
+
+import { languages, frameworks, tools } from "~/assets/data/data"
+
 export default {
   name: 'AboutMe',
+  data() {
+    return {
+      languages,
+      frameworks,
+      tools
+    }
+  }
 }
 </script>

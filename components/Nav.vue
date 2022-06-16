@@ -3,7 +3,7 @@
     class="fixed bg-white shadow-sm z-10 top-0 w-full px-5 py-2 flex justify-between items-center"
   >
     <div>
-      <a href="#" class="text-2xl mr-5">kalmbach.dev</a>
+      <a href="#" class="text-2xl mr-5 font-serif">kalmbach.dev</a>
       <a
         href="https://github.com/Tobi2K"
         target="_blank"
@@ -64,7 +64,11 @@ export default {
       anchor.addEventListener('click', function (e) {
         e.preventDefault()
 
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
+        const element = document.querySelector(this.getAttribute('href'))
+        const topOfElementWithOffset = element.getBoundingClientRect().top + window.pageYOffset - 50
+
+        window.scrollTo({
+          top: topOfElementWithOffset,
           behavior: 'smooth',
         })
       })
@@ -78,7 +82,8 @@ export default {
         const links = document.querySelectorAll('.nav-link')
 
         // functions to add and remove the active class from links as appropriate
-        const makeLinkActive = (linkIndex) => links[linkIndex].classList.add('active')
+        const makeLinkActive = (linkIndex) =>
+          links[linkIndex].classList.add('active')
         const deactivateLink = (linkIndex) =>
           links[linkIndex].classList.remove('active')
         const deactivateAllLinks = () =>
@@ -92,11 +97,9 @@ export default {
         window.addEventListener('scroll', () => {
           const indexInView =
             sections.length -
-            [...sections]
-              .reverse()
-              .findIndex(
-                (section) => window.scrollY >= section.offsetTop - 300 // offset so that active section is switch before section reaches top 
-              ) -
+            [...sections].reverse().findIndex(
+              (section) => window.scrollY >= section.offsetTop - 300 // offset so that active section is switch before section reaches top
+            ) -
             1
 
           if (indexInView !== activeIndex) {

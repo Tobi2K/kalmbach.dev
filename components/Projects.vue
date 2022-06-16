@@ -1,7 +1,7 @@
 <template>
   <div
     id="projects"
-    class="relative flex items-top justify-center min-h-screen sm:items-center sm:pt-0 section-header"
+    class="relative flex items-top justify-center min-h-screen sm:items-center sm:pt-0 section-header bg-gray-200"
   >
     <div class="container max-w-4xl mx-auto sm:px-6 lg:px-8">
       <div class="mt-8 overflow-hidden p-6 shadow bg-slate-500/50 rounded">

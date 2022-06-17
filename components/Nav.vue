@@ -1,30 +1,30 @@
 <template>
   <header
-    class="fixed bg-white shadow-sm z-10 top-0 w-full px-5 py-2 flex justify-between items-center"
+    class="fixed bg-white shadow-sm z-10 top-0 w-full px-5 py-2 flex justify-between items-center font-roboto "
   >
-    <a href="#" class="text-2xl font-serif">kalmbach.dev</a>
-    <div class="flex space-x-2 justify-center">
+    <a href="#" class="text-2xl font-thin">kalmbach.dev</a>
+    <div class="flex space-x-2 justify-center font-medium text-xs uppercase">
       <a
         href="#home"
-        class="inline-block px-6 py-2.5 bg-transparent font-medium text-xs uppercase rounded hover:text-white hover:bg-blue-500 hover:shadow-lg nav-link active"
+        class="inline-block px-6 py-2.5 bg-transparent rounded hover:underline nav-link active"
       >
         Home
       </a>
       <a
         href="#about-me"
-        class="inline-block px-6 py-2.5 bg-transparent font-medium text-xs uppercase rounded hover:text-white hover:bg-blue-500 hover:shadow-lg nav-link"
+        class="inline-block px-6 py-2.5 bg-transparent uppercase rounded hover:underline nav-link"
       >
         About me
       </a>
       <a
         href="#projects"
-        class="inline-block px-6 py-2.5 bg-transparent font-medium text-xs uppercase rounded hover:text-white hover:bg-blue-500 hover:shadow-lg nav-link"
+        class="inline-block px-6 py-2.5 bg-transparent rounded hover:underline nav-link"
       >
         Projects
       </a>
       <a
         href="#contact"
-        class="inline-block px-6 py-2.5 bg-transparent font-medium text-xs uppercase rounded hover:text-white hover:bg-blue-500 hover:shadow-lg nav-link"
+        class="inline-block px-6 py-2.5 bg-transparent rounded hover:underline nav-link"
       >
         Contact
       </a>
@@ -95,8 +95,7 @@ export default {
 
 <style scoped>
 .nav-link.active {
-  background-color: rgb(59 130 246);
-  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  color: white;
+  text-decoration-line: underline;
+  text-decoration-style: double;
 }
 </style>

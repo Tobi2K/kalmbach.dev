@@ -1,7 +1,9 @@
 <template>
   <div class="main-slider">
     <transition-group tag="div" :name="transitionName" class="slides-group">
-      <img v-if="show" :key="current" class="slide" :src="images[current]" />
+      <div v-if="show" :key="current" class="slide">
+        <img :src="images[current]" class="max-h-full max-w-full" />
+      </div>
     </transition-group>
     <div
       v-if="images.length > 1"

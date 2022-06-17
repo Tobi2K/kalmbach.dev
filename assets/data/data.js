@@ -146,3 +146,42 @@ export const tools = [
     title: 'Firebase',
   },
 ]
+
+export const projects = [
+  {
+    title: 'Top Tips',
+    desc: 'Top Tips is a lightweight guessing game for handball leagues. You can choose from more than 130 leagues in 25 countries as well as international leagues. <br>You can create groups for different leagues and seasons and play with your friends. <br><br> The app was built with Vue and Ionic. You can find the app on <a class="underline" href="https://play.google.com/store/apps/details?id=app.kalmbach.dev">Google Play</a> or on the <a class="underline" href="https://app.kalmbach.dev">web</a>.',
+    images: [
+      '/images/project/top-tips/login.png',
+      '/images/project/top-tips/play.png',
+      '/images/project/top-tips/create_group.png',
+      '/images/project/top-tips/settings.png',
+    ],
+    link: 'https://github.com/Tobi2K/TopTips-App',
+  },
+  {
+    title: 'Mailspring Deep Marine',
+    desc: 'Deep Marine is a basic dark blue theme for the <a class="underline" href="http://www.getmailspring.com/">Mailspring</a> email client.',
+    images: [
+      '/images/project/mailspring-deepmarine/custom-theme.png',
+    ],
+    link: 'https://github.com/Tobi2K/mailspring-deepmarine',
+  },
+  {
+    title: 'Autoencoder',
+    desc: 'This project encompasses autoencoders, more specifically denoising autoencoders. These autoencoders were used for a paper during my Bachelor studies and were trained to reconstruct (noisy) MNIST images. Tensorflow (i.e. keras) was the main library used for autoencoder construction and training.',
+    images: [
+      '/images/project/autoencoder/denoising.png',
+      '/images/project/autoencoder/denoising_ae.svg',
+    ],
+    link: 'https://github.com/Tobi2K/SeminarNI',
+  },
+  {
+    title: 'GitLab compatible ktlint reporter',
+    desc: 'ktlint is a simple linter for Kotlin. There are many built-in linting reporters (with different output formats) and several custom reporters for ktlint. We used GitLab and Kotlin in a university project, however no correctly formatted reporter existed, so I decided to write this one. This correctly formatted output can be used in GitLab CI to automatically highlight lint errors with information like file or line number as seen above.',
+    images: [
+      '/images/project/ktlint-reporter/code_quality.png',
+    ],
+    link: 'https://github.com/Tobi2K/ktlint-gitlab-reporter',
+  },
+]

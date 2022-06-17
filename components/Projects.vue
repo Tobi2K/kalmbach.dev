@@ -9,8 +9,13 @@
           Projects
         </h1>
         <div class="grid grid-cols-3 gap-4 mt-8">
-          <Card title="test" desc="This is a project about stuff." :images="x" />
-          <Card title="test" desc="This is a project about stuff." :images="x" />
+          <Card :info="info" />
+          <Card :info="info" />
+          <Card
+            v-for="project in projects"
+            :key="project.title"
+            :info="project"
+          />
         </div>
       </div>
     </div>
@@ -18,18 +23,23 @@
 </template>
 
 <script>
+import { projects } from '~/assets/data/data'
 
-const x = [
-  '/css3.png',
-  '/html5.png',
-]
+const x = ['/css3.png', '/html5.png']
+
+const info = {
+  title: 'Test',
+  desc: 'This is a good project',
+  images: x,
+}
 
 export default {
   name: 'MyProjects',
   data() {
     return {
-      x
+      info,
+      projects,
     }
-  }
+  },
 }
 </script>

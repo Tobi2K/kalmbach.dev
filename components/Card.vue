@@ -5,6 +5,7 @@
       <FAIcon class="rounded-full bg-white p-2" icon="fa-brands fa-github" />
     </a>
     <Slider v-if="info.images.length !== 0" :images="info.images" />
+    <!-- eslint-disable-next-line vue/no-v-html -->
     <p class="mt-4"><span v-html="info.desc" /></p>
   </div>
 </template>
@@ -15,8 +16,8 @@ export default {
   props: {
     info: {
       type: Object,
-      required: true
-    }
+      required: true,
+    },
   },
 }
 </script>

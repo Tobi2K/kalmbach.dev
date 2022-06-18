@@ -29,21 +29,51 @@
 
         <div class="grid grid-cols-3 gap-10">
           <div>
-            <h2 class="text-xl font-semibold text-blue-500 mb-4 border-l-4 pl-2">Languages</h2>
+            <h2
+              class="text-xl font-semibold text-blue-500 mb-4 border-l-4 pl-2"
+            >
+              Languages
+            </h2>
             <div class="grid grid-cols-2 gap-x-4 gap-y-3">
-              <ItemBox v-for="lang in languages" :key="lang.title" :link="lang.link" :alt="lang.alt" :title="lang.title" />
+              <ItemBox
+                v-for="lang in languages"
+                :key="lang.title"
+                :link="lang.link"
+                :alt="lang.alt"
+                :title="lang.title"
+              />
             </div>
           </div>
           <div>
-            <h2 class="text-xl font-semibold text-blue-500 mb-4 border-l-4 pl-2">Frameworks</h2>
+            <h2
+              class="text-xl font-semibold text-blue-500 mb-4 border-l-4 pl-2"
+            >
+              Frameworks
+            </h2>
             <div class="grid grid-cols-2 gap-x-4 gap-y-3">
-              <ItemBox v-for="fw in frameworks" :key="fw.title" :link="fw.link" :alt="fw.alt" :title="fw.title" />
+              <ItemBox
+                v-for="fw in frameworks"
+                :key="fw.title"
+                :link="fw.link"
+                :alt="fw.alt"
+                :title="fw.title"
+              />
             </div>
           </div>
           <div>
-            <h2 class="text-xl font-semibold text-blue-500 mb-4 border-l-4 pl-2">Tools</h2>
+            <h2
+              class="text-xl font-semibold text-blue-500 mb-4 border-l-4 pl-2"
+            >
+              Tools
+            </h2>
             <div class="grid grid-cols-2 gap-x-4 gap-y-3">
-              <ItemBox v-for="tool in tools" :key="tool.title" :link="tool.link" :alt="tool.alt" :title="tool.title" />
+              <ItemBox
+                v-for="tool in tools"
+                :key="tool.title"
+                :link="tool.link"
+                :alt="tool.alt"
+                :title="tool.title"
+              />
             </div>
           </div>
         </div>
@@ -53,8 +83,7 @@
 </template>
 
 <script>
-
-import { languages, frameworks, tools } from "~/assets/data/data"
+import { languages, frameworks, tools } from '~/assets/data/data'
 
 export default {
   name: 'AboutMe',
@@ -62,8 +91,8 @@ export default {
     return {
       languages,
       frameworks,
-      tools
+      tools,
     }
-  }
+  },
 }
 </script>

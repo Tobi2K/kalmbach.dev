@@ -1,6 +1,6 @@
 <template>
   <header
-    class="fixed bg-white shadow-sm z-10 top-0 w-full px-5 py-2 flex justify-between items-center font-roboto "
+    class="fixed bg-white shadow-sm z-10 top-0 w-full px-5 py-2 flex justify-between items-center font-roboto"
   >
     <a href="#" class="text-2xl font-thin">kalmbach.dev</a>
     <div class="flex space-x-2 justify-center font-medium text-xs uppercase">

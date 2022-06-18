@@ -17,7 +17,6 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import Footer from '~/components/Footer.vue'
 
 library.add(fas, fab)
 
@@ -27,7 +26,6 @@ Vue.component('FAIcon', FontAwesomeIcon)
 Vue.config.productionTip = false
 
 export default Vue.extend({
-  components: { Footer },
   name: 'IndexPage',
 })
 </script>

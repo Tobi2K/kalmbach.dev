@@ -184,4 +184,24 @@ export const projects = [
     ],
     link: 'https://github.com/Tobi2K/ktlint-gitlab-reporter',
   },
+  {
+    title: 'Text Analytics - Party Programs',
+    desc: 'As an exam substitute for a Text Analytics course we explored semi-automatic analysis of political parties, in this case major German political parties. We used the party manifestos and extracted topics using LDA and HDP, as well as BERT. All paragraphs of the manifestos were then categorized and each category summarized.',
+    images: [
+      '/images/project/tadl/cluster.png',
+      '/images/project/tadl/LDA.png',
+      '/images/project/tadl/transformer.png',
+    ],
+    link: 'https://github.com/Tobi2K/TextAnalytics-Party-Programs',
+  },
+  {
+    title: 'Text Analytics - Web Interface',
+    desc: 'As an easy way to interact with the results of the aforementioned text analytics project, we created a web interface. In this interface, each category displays anonymized summaries for each analyzed party. The user can rate these summaries and in the end receives a ranking of what party the user agrees most with.',
+    images: [
+      '/images/project/tadl/web_1.png',
+      '/images/project/tadl/web_2.png',
+      '/images/project/tadl/web_3.png',
+    ],
+    link: 'https://github.com/Tobi2K/TADL-webpage',
+  },
 ]

@@ -9,8 +9,6 @@
           Projects
         </h1>
         <div class="grid grid-cols-3 gap-4 mt-8">
-          <Card :info="info" />
-          <Card :info="info" />
           <Card
             v-for="project in projects"
             :key="project.title"

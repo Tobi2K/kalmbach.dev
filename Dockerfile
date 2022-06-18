@@ -15,4 +15,6 @@ RUN npm install --loglevel notice --unsafe-perm
 
 RUN npm run build
 
+RUN npm run generate
+
 CMD [ "npm", "run", "start" ]

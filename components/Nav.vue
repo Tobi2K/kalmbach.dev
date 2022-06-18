@@ -62,36 +62,37 @@ export default {
     // add automatic section highlighting. Parts taken from https://medium.com/p1xts-blog/scrollspy-with-just-javascript-3131c114abdc
     addScrolling() {
       const sections = document.querySelectorAll('.section-header')
-        const links = document.querySelectorAll('.nav-link')
+      const links = document.querySelectorAll('.nav-link')
 
-        // functions to add and remove the active class from links as appropriate
-        const makeLinkActive = (linkIndex) =>
-          links[linkIndex].classList.add('active')
-        const deactivateLink = (linkIndex) =>
-          links[linkIndex].classList.remove('active')
-        const deactivateAllLinks = () =>
-          [...Array(sections.length).keys()].forEach((linkIndex) =>
-            deactivateLink(linkIndex)
-          )
+      // functions to add and remove the active class from links as appropriate
+      const makeLinkActive = (linkIndex) =>
+        links[linkIndex].classList.add('active')
+      const deactivateLink = (linkIndex) =>
+        links[linkIndex].classList.remove('active')
+      const deactivateAllLinks = () =>
+        [...Array(sections.length).keys()].forEach((linkIndex) =>
+          deactivateLink(linkIndex)
+        )
 
-        let activeIndex = 0
+      let activeIndex = 0
 
-        // listen for scroll events
-        window.addEventListener('scroll', () => {
-          const indexInView =
-            sections.length -
-            [...sections].reverse().findIndex(
-              (section) => window.scrollY >= section.offsetTop - 300 // offset so that active section is switch before section reaches top
-            ) -
-            1
+      // listen for scroll events
+      window.addEventListener('scroll', () => {
+        const indexInView =
+          sections.length -
+          [...sections].reverse().findIndex(
+            (section) =>
+              window.scrollY >= section.offsetTop - window.innerHeight / 2 // offset so that active section is switch before section reaches top
+          ) -
+          1
 
-          if (indexInView !== activeIndex) {
-            deactivateAllLinks()
-            activeIndex = indexInView
-            makeLinkActive(indexInView)
-          }
-        })
-    }
-  }
+        if (indexInView !== activeIndex) {
+          deactivateAllLinks()
+          activeIndex = indexInView
+          makeLinkActive(indexInView)
+        }
+      })
+    },
+  },
 }
 </script>

@@ -88,7 +88,6 @@
   font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-
 /* General Style */
 .jumbotron {
   min-height: 100vh;
@@ -97,7 +96,6 @@
   background-position: bottom;
   background-size: cover;
 }
-
 
 /* Header.vue */
 .scroll-arrow {
@@ -116,8 +114,6 @@
 .icon-list .single-icon {
   font-size: 3em;
   font-weight: bold;
-  position: relative;
-  top: 25%;
 }
 
 .icon-list .single-icon span {
@@ -126,6 +122,12 @@
   animation-timing-function: ease;
   animation-duration: 1s;
   display: none;
+  width: 100%;
+}
+
+.icon-list .single-icon span svg {
+  width: 80%;
+  height: 80%;
 }
 
 .icon-list .single-icon.in span {
@@ -160,6 +162,24 @@
   }
 }
 
+.animate-wave,
+.animate-wave-hover:hover {
+  cursor: pointer;
+  animation-name: wave;
+  animation-duration: 0.2s;
+  animation-iteration-count: 4;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes wave {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(30deg);
+  }
+}
 
 /* Contact.vue */
 .animate-missing-field {
@@ -180,21 +200,17 @@
   }
 }
 
-
 /* Nav.vue */
 .nav-link.active {
-  background-color: rgb(59 130 246);
-  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  color: white;
+  text-decoration-line: underline;
+  text-decoration-style: double;
 }
-
 
 /* Overlay.vue */
 #overlay {
   background-color: rgba(255, 255, 255);
   z-index: 999;
 }
-
 
 /* Slider.vue */
 /* FADE IN */

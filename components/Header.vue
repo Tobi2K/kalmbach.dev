@@ -7,10 +7,10 @@
       <div class="mt-8 text-white overflow-hidden p-6 grid grid-cols-12">
         <div class="col-span-10">
           <header class="mb-16 group">
-            <h1 class="mb-1 font-mono text-4xl text-gray-100 md:text-6xl">
+            <h1 class="mb-1 text-4xl text-gray-100 md:text-6xl">
               <span class="inline-flex pt-2 h-20">
                 Hi
-                <span class="ml-3"> 👋 </span>
+                <span id="wave" class="ml-3 animate-wave-hover"> 👋 </span>
               </span>
               <br />
               <span> My name is Tobi </span>
@@ -55,7 +55,7 @@
           </div>
         </div>
 
-        <div class="icon-list flex justify-center align-middle">
+        <div class="icon-list flex justify-center items-center col-span-2">
           <div class="single-icon in">
             <span>
               <FAIcon icon="fa-brands fa-html5" />

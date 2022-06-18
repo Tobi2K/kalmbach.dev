@@ -1,4 +1,4 @@
-FROM httpd:2.4
+FROM node:14
 
 ENV APP_PORT 8080
 

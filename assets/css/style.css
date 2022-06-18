@@ -1,3 +1,5 @@
+/* Add Roboto Font */
+
 @font-face {
   font-family: Roboto;
   src: url('~/assets/fonts/Roboto/Roboto-Regular.ttf');
@@ -86,37 +88,10 @@
   font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.will-change-transform {
-  will-change: transform;
-}
-
 .jumbotron {
   min-height: 100vh;
   background-image: url(~/assets/img/bg.svg);
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
-}
-
-.cursor::after {
-  display: block;
-  content: '';
-  position: absolute;
-  width: 4px;
-  height: 100%;
-  background-color: #fff;
-  animation: cursor 0.6s linear infinite alternate;
-  will-change: opacity;
-}
-
-@keyframes cursor {
-  0%,
-  40% {
-    opacity: 1;
-  }
-
-  60%,
-  100% {
-    opacity: 0;
-  }
 }

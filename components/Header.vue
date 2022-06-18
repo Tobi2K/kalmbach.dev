@@ -8,18 +8,12 @@
         <div class="col-span-10">
           <header class="mb-16 group">
             <h1 class="mb-1 font-mono text-4xl text-gray-100 md:text-6xl">
-              <span class="inline-flex pt-2 h-20"
-                >Hi,<br class="block md:hidden"
-              /></span>
-              <span
-                id="typing-animation"
-                class="inline-flex h-20 -ml-6 overflow-x-hidden hidden whitespace-nowrap will-change-transform pt-2"
-              >
-                I'm Tobi 👋
+              <span class="inline-flex pt-2 h-20">
+                Hi
+                <span class="ml-3"> 👋 </span>
               </span>
-              <span
-                class="box-border inline-block w-1 h-10 -ml-6 -mb-2 bg-white md:-mb-4 md:h-16 animate-cursor will-change-transform"
-              ></span>
+              <br />
+              <span> My name is Tobi </span>
             </h1>
           </header>
           <h2 class="text-2xl leading-7 font-semibold">

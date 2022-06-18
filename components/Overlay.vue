@@ -32,21 +32,24 @@
 export default {
   name: 'LoadingOverlay',
   mounted() {
-    document.addEventListener(
-      'DOMContentLoaded',
-      function () {
-        setTimeout(function () {
-          document.getElementById('overlay').classList.add('hidden')
+    if (document.readyState !== 'loading') {
+      this.loading()
+    } else {
+      document.addEventListener('DOMContentLoaded', this.loading(), false)
+    }
+  },
+  methods: {
+    loading() {
+      setTimeout(function () {
+        document.getElementById('overlay').classList.add('hidden')
 
-          const list = document.getElementById('typing-animation').classList
-          setTimeout(function () {
-            list.remove('hidden')
-            list.add('animate-type')
-          }, 500)
-        }, 1000)
-      },
-      false
-    )
+        const list = document.getElementById('typing-animation').classList
+        setTimeout(function () {
+          list.remove('hidden')
+          list.add('animate-type')
+        }, 500)
+      }, 1000)
+    },
   },
 }
 </script>

@@ -6,4 +6,13 @@ ENV TZ=Europe/Berlin
 
 EXPOSE 8080
 
-COPY ./ /usr/local/apache2/htdocs/
+WORKDIR /usr/src/web
+
+COPY package.json .
+COPY . .
+
+RUN npm install --loglevel notice --unsafe-perm
+
+RUN npm run build
+
+CMD [ "npm", "run", "start" ]

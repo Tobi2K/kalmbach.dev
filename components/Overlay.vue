@@ -32,10 +32,3 @@ export default {
   },
 }
 </script>
-
-<style scoped>
-#overlay {
-  background-color: rgba(255, 255, 255);
-  z-index: 999;
-}
-</style>

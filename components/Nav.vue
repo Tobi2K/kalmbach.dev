@@ -95,10 +95,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-.nav-link.active {
-  text-decoration-line: underline;
-  text-decoration-style: double;
-}
-</style>

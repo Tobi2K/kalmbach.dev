@@ -52,11 +52,16 @@ export default {
       })
     })
 
+    if (document.readyState !== 'loading') {
+      this.addScrolling()
+    } else {
+      document.addEventListener('DOMContentLoaded', this.addScrolling(), false)
+    }
+  },
+  methods: {
     // add automatic section highlighting. Parts taken from https://medium.com/p1xts-blog/scrollspy-with-just-javascript-3131c114abdc
-    document.addEventListener(
-      'DOMContentLoaded',
-      function () {
-        const sections = document.querySelectorAll('.section-header')
+    addScrolling() {
+      const sections = document.querySelectorAll('.section-header')
         const links = document.querySelectorAll('.nav-link')
 
         // functions to add and remove the active class from links as appropriate
@@ -86,10 +91,8 @@ export default {
             makeLinkActive(indexInView)
           }
         })
-      },
-      false
-    )
-  },
+    }
+  }
 }
 </script>
 

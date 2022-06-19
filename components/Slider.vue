@@ -5,22 +5,22 @@
         <img :src="images[current]" class="max-h-full max-w-full" />
       </div>
     </transition-group>
-    <div
+    <button
       v-if="images.length > 1"
-      class="btn btn-prev"
+      class="slider-btn slider-btn-prev"
       aria-label="Previous slide"
       @click="slide(-1)"
     >
-      &#10094;
-    </div>
-    <div
+      <span>&#10094;</span>
+    </button>
+    <button
       v-if="images.length > 1"
-      class="btn btn-next"
+      class="slider-btn slider-btn-next"
       aria-label="Next slide"
       @click="slide(1)"
     >
-      &#10095;
-    </div>
+      <span>&#10095;</span>
+    </button>
   </div>
 </template>
 
@@ -37,13 +37,8 @@ export default {
     return {
       current: 0,
       direction: 1,
-      transitionName: 'fade',
+      transitionName: '',
       show: false,
-      slides: [
-        { className: 'blue' },
-        { className: 'red' },
-        { className: 'yellow' },
-      ],
       interval: null,
     }
   },

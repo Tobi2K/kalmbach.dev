@@ -76,11 +76,10 @@
             <hr />
             <div class="grid grid-cols-10">
               <div
-                class="col-span-2 grid justify-items-center items-center"
-                style="aspect-ratio: 1/1"
+                class="col-span-2 grid justify-items-center items-center aspect-square"
               >
                 <FAIcon
-                  class="rounded-full bg-gray-200 p-2"
+                  class="rounded-full bg-gray-200 p-2 aspect-square"
                   icon="fa-solid fa-envelope"
                 />
               </div>
@@ -92,11 +91,10 @@
             </div>
             <div class="grid grid-cols-10">
               <div
-                class="col-span-2 grid justify-items-center items-center"
-                style="aspect-ratio: 1/1"
+                class="col-span-2 grid justify-items-center items-center aspect-square"
               >
                 <FAIcon
-                  class="rounded-full bg-gray-200 p-2"
+                  class="rounded-full bg-gray-200 p-2 aspect-square"
                   icon="fa-brands fa-github"
                 />
               </div>
@@ -106,11 +104,10 @@
             </div>
             <div class="grid grid-cols-10">
               <div
-                class="col-span-2 grid justify-items-center items-center"
-                style="aspect-ratio: 1/1"
+                class="col-span-2 grid justify-items-center items-center aspect-square"
               >
                 <FAIcon
-                  class="rounded-full bg-gray-200 p-2"
+                  class="rounded-full bg-gray-200 p-2 aspect-square"
                   icon="fa-brands fa-stack-overflow"
                 />
               </div>
@@ -124,11 +121,10 @@
             </div>
             <div class="grid grid-cols-10">
               <div
-                class="col-span-2 grid justify-items-center items-center"
-                style="aspect-ratio: 1/1"
+                class="col-span-2 grid justify-items-center items-center aspect-square"
               >
                 <FAIcon
-                  class="rounded-full bg-gray-200 p-2"
+                  class="rounded-full bg-gray-200 p-2 aspect-square"
                   icon="fa-brands fa-linkedin"
                 />
               </div>

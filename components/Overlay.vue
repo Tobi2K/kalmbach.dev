@@ -1,7 +1,7 @@
 <template>
   <div
     id="overlay"
-    class="fixed h-screen w-screen grid justify-items-center items-center place-items-center"
+    class="fixed h-screen w-screen grid justify-items-center items-center place-items-center hidden"
   >
     <svg
       width="140"

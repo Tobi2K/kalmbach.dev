@@ -1,0 +1,83 @@
+/* Header.vue */
+.scroll-arrow {
+    position: absolute;
+    margin: auto;
+    bottom: 5%;
+    width: 30px;
+    height: 30px;
+  }
+  
+  .scroll-arrow svg {
+    display: block !important;
+    margin: auto;
+  }
+  
+  .icon-list .single-icon {
+    font-size: 3em;
+    font-weight: bold;
+  }
+  
+  .icon-list .single-icon span {
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+    animation-duration: 1s;
+    display: none;
+    width: 100%;
+  }
+  
+  .icon-list .single-icon span svg {
+    width: 80%;
+    height: 80%;
+  }
+  
+  .icon-list .single-icon.in span {
+    animation-name: fadeIn;
+    display: block;
+  }
+  
+  .icon-list .single-icon.out span {
+    animation-name: fadeOut;
+    display: block;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(25%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateY(-25%);
+    }
+  }
+  
+  .animate-wave,
+  .animate-wave-hover:hover {
+    cursor: pointer;
+    animation-name: wave;
+    animation-duration: 0.2s;
+    animation-iteration-count: 4;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+  }
+  
+  @keyframes wave {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(30deg);
+    }
+  }

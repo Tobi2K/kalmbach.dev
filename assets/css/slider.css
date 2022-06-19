@@ -61,13 +61,13 @@
 }
 
 .slider-btn span {
-    opacity: 1;
-    color: white;
+  opacity: 1;
+  color: white;
 }
 
 .slider-btn-prev {
-    left: 1%;
-    right: auto;
+  left: 1%;
+  right: auto;
 }
 
 .slider-btn-next {

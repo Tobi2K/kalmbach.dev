@@ -5,14 +5,19 @@
     <div class="text-center">
       <span
         >Made with <FAIcon icon="fa-solid fa-heart" style="color: #e25555" /> by
-        Tobi</span
-      >
+        Tobi
+      </span>
       <br />
       <span
         >With the help of
-        <a class="underline" href="https://nuxtjs.org/" target="_blank">NuxtJS</a> &
-        <a class="underline" href="https://tailwindcss.com/" target="_blank">tailwind</a></span
-      >
+        <a class="underline" href="https://nuxtjs.org/" target="_blank"
+          >NuxtJS
+        </a>
+        &
+        <a class="underline" href="https://tailwindcss.com/" target="_blank"
+          >tailwind
+        </a>
+      </span>
     </div>
   </footer>
 </template>

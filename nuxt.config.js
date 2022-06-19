@@ -12,18 +12,48 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'I\'m Tobi, a software developer and student. Feel free to check out my projects or connect with me!'},
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          "I'm Tobi, a software developer and student. Feel free to check out my projects or connect with me!",
+      },
       { name: 'author', content: 'Tobias Kalmbach' },
 
       { hid: 'og-type', property: 'og:type', content: 'website' },
-      { hid: 'og-title', property: 'og:title', content: 'Tobias Kalmbach - Portfolio' },
-      { hid: 'og-description', property: 'og:description', content: 'I\'m Tobi, a software developer and student. Feel free to check out my projects or connect with me!' },
+      {
+        hid: 'og-title',
+        property: 'og:title',
+        content: 'Tobias Kalmbach - Portfolio',
+      },
+      {
+        hid: 'og-description',
+        property: 'og:description',
+        content:
+          "I'm Tobi, a software developer and student. Feel free to check out my projects or connect with me!",
+      },
       { hid: 'og-url', property: 'og:url', content: 'https://kalmbach.dev/' },
+      { hid: 'og-title', property: 'og:title', content: 'Tobias Kalmbach' },
 
-      { hid: 'twitter-title', property: 'twitter:title', content: 'Tobias Kalmbach - Portfolio' },
-      { hid: 'twitter-description', property: 'twitter:description', content: 'I\'m Tobi, a software developer and student. Feel free to check out my projects or connect with me!' },
+      {
+        hid: 'twitter-title',
+        property: 'twitter:title',
+        content: 'Tobias Kalmbach - Portfolio',
+      },
+      {
+        hid: 'twitter-description',
+        property: 'twitter:description',
+        content:
+          "I'm Tobi, a software developer and student. Feel free to check out my projects or connect with me!",
+      },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'canonical',
+        href: 'https://kalmbach.dev/',
+      },
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css

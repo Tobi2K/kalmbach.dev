@@ -19,6 +19,7 @@ export default {
           "I'm Tobi, a software developer and student. Feel free to check out my projects or connect with me!",
       },
       { name: 'author', content: 'Tobias Kalmbach' },
+      { name: 'application-name', content: 'Tobias Kalmbach' },
 
       { hid: 'og-type', property: 'og:type', content: 'website' },
       {
@@ -33,7 +34,6 @@ export default {
           "I'm Tobi, a software developer and student. Feel free to check out my projects or connect with me!",
       },
       { hid: 'og-url', property: 'og:url', content: 'https://kalmbach.dev/' },
-      { hid: 'og-title', property: 'og:title', content: 'Tobias Kalmbach' },
 
       {
         hid: 'twitter-title',

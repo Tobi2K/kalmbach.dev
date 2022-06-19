@@ -1,13 +1,13 @@
 <h1 align="center">
-  kalmbach.dev
+  Portfolio - kalmbach.dev
 </h1>
 <p align="center">
-<a href="https://app.kalmbach.dev">
+<a href="https://www.kalmbach.dev">
     <img alt="Website" src="https://img.shields.io/website?down_message=offline&style=for-the-badge&up_message=online&url=https%3A%2F%2Fwww.kalmbach.dev">
 </a>
 </p>
 
-This is my simple Portfolio webpage. Created with [NuxtJS](https://nuxtjs.org/) and [tailwind](https://tailwindcss.com/).
+This is the code for my simple Portfolio [webpage](https://www.kalmbach.dev). Created with [NuxtJS](https://nuxtjs.org/) and [tailwind](https://tailwindcss.com/).
 
 ---
 

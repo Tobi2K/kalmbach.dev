@@ -17,9 +17,9 @@
             with simple web development and later on branched out into app
             development and data science. I'm currently studying Software
             Engineering at
-            <a class="underline" href="https://www.uni-ulm.de/"
-              >University Ulm</a
-            >
+            <a class="underline" href="https://www.uni-ulm.de/" target="_blank">
+              University Ulm
+            </a>
             where I focus on data science as well. <br />
             <br />
             Feel free to take a look at my preferred languages and tools below

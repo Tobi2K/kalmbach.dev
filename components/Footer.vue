@@ -10,8 +10,8 @@
       <br />
       <span
         >With the help of
-        <a class="underline" href="https://nuxtjs.org/">NuxtJS</a> &
-        <a class="underline" href="https://tailwindcss.com/">tailwind</a></span
+        <a class="underline" href="https://nuxtjs.org/" target="_blank">NuxtJS</a> &
+        <a class="underline" href="https://tailwindcss.com/" target="_blank">tailwind</a></span
       >
     </div>
   </footer>

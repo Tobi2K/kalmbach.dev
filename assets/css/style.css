@@ -95,9 +95,8 @@
   min-height: 100vh;
   background-image: url(~/assets/img/bg.svg);
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: right;
   background-size: cover;
-  background-clip: unset;
 }
 
 /* Contact.vue */

@@ -7,6 +7,12 @@
   height: 30px;
 }
 
+@media (max-width: 850px) {
+  .scroll-arrow {
+    bottom: 10%;
+  }
+}
+
 .scroll-arrow svg {
   display: block !important;
   margin: auto;

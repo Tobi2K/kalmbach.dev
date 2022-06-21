@@ -1,11 +1,11 @@
 <template>
   <div
     id="about-me"
-    class="relative sm:items-center sm:pt-0 section-header my-16"
+    class="relative items-center pt-0 section-header my-16"
   >
     <div class="container mx-auto sm:px-6 lg:px-8 mt-4">
       <div class="overflow-hidden p-6 shadow rounded">
-        <h1 class="text-center font-semibold text-3xl font-sans underline">
+        <h1 class="text-center font-semibold text-3xl font-sans underline mb-4">
           About Me
         </h1>
         <div class="mb-8">
@@ -27,8 +27,8 @@
           </div>
         </div>
 
-        <div class="grid grid-cols-3 gap-10">
-          <div>
+        <div class="grid grid-cols-1 md:grid-cols-3 md:gap-10">
+          <div class="mb-4 md:mb-0">
             <h2
               class="text-xl font-semibold text-blue-500 mb-4 border-l-4 pl-2"
             >
@@ -44,7 +44,7 @@
               />
             </div>
           </div>
-          <div>
+          <div class="mb-4 md:mb-0">
             <h2
               class="text-xl font-semibold text-blue-500 mb-4 border-l-4 pl-2"
             >
@@ -60,7 +60,7 @@
               />
             </div>
           </div>
-          <div>
+          <div class="mb-4 md:mb-0">
             <h2
               class="text-xl font-semibold text-blue-500 mb-4 border-l-4 pl-2"
             >

@@ -1,11 +1,11 @@
 <template>
   <div
     id="home"
-    class="relative flex items-top justify-center min-h-screen sm:items-center sm:pt-0 jumbotron section-header"
+    class="relative flex items-center justify-center min-h-screen sm:items-center sm:pt-0 jumbotron section-header"
   >
     <div class="container max-w-4xl mx-auto sm:px-6 lg:px-8">
       <div class="mt-8 text-white overflow-hidden p-6 grid grid-cols-12">
-        <div class="col-span-10">
+        <div class="col-span-12 md:col-span-10">
           <header class="mb-16 group">
             <h1 class="mb-1 text-4xl text-gray-100 md:text-6xl">
               <span class="inline-flex pt-2 h-20">
@@ -55,7 +55,7 @@
           </div>
         </div>
 
-        <div class="icon-list flex justify-center items-center col-span-2">
+        <div class="icon-list justify-center items-center col-span-2 hidden md:flex">
           <div class="single-icon in">
             <span>
               <FAIcon icon="fa-brands fa-html5" />

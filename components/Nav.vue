@@ -1,30 +1,30 @@
 <template>
   <header
-    class="fixed bg-white shadow-sm z-10 top-0 w-full px-5 py-2 flex justify-between items-center font-roboto"
+    class="fixed bg-white shadow-sm z-10 top-0 w-full px-5 py-2 flex justify-center md:justify-between items-center font-roboto"
   >
-    <a href="#" class="text-2xl font-thin">kalmbach.dev</a>
+    <a href="#" class="text-2xl font-thin hidden md:block">kalmbach.dev</a>
     <div class="flex space-x-2 justify-center font-medium text-xs uppercase">
       <a
         href="#home"
-        class="inline-block px-6 py-2.5 bg-transparent rounded hover:underline nav-link active"
+        class="inline-block px-2 md:px-6 py-2.5 bg-transparent rounded hover:underline nav-link active"
       >
         Home
       </a>
       <a
         href="#about-me"
-        class="inline-block px-6 py-2.5 bg-transparent uppercase rounded hover:underline nav-link"
+        class="inline-block px-2 md:px-6 py-2.5 bg-transparent uppercase rounded hover:underline nav-link"
       >
         About me
       </a>
       <a
         href="#projects"
-        class="inline-block px-6 py-2.5 bg-transparent rounded hover:underline nav-link"
+        class="inline-block px-2 md:px-6 py-2.5 bg-transparent rounded hover:underline nav-link"
       >
         Projects
       </a>
       <a
         href="#contact"
-        class="inline-block px-6 py-2.5 bg-transparent rounded hover:underline nav-link"
+        class="inline-block px-2 md:px-6 py-2.5 bg-transparent rounded hover:underline nav-link"
       >
         Contact
       </a>

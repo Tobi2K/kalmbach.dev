@@ -94,5 +94,65 @@ export default {
       tools,
     }
   },
+  mounted() {
+    if (document.readyState !== 'loading') {
+      this.addAnimation()
+    } else {
+      document.addEventListener('DOMContentLoaded', this.addAnimation(), false)
+    }
+  },
+  methods: {
+    addAnimation() {
+      let boxes
+      let windowHeight
+      let windowWidth
+
+      function update() {
+        boxes = document.querySelectorAll('.item-box')
+        windowHeight = window.innerHeight
+        windowWidth = window.innerWidth
+      }
+
+      function checkBoxPosition() {
+        for (let i = 0; i < boxes.length; i++) {
+          const box = boxes[i]
+          if (isInViewport(box)) {
+            box.classList.add('fade-in-box')
+            box.classList.remove('item-box-hidden')
+          } else if (isOutOfViewport(box)) {
+            box.classList.remove('fade-in-box')
+            box.classList.add('item-box-hidden')
+          }
+        }
+      }
+
+      function isInViewport(element) {
+        const rect = element.getBoundingClientRect()
+        return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <=
+            (windowHeight + 80 || document.documentElement.clientHeight) &&
+          rect.right <=
+            (windowWidth || document.documentElement.clientWidth)
+        )
+      }
+
+      function isOutOfViewport(element) {
+        const rect = element.getBoundingClientRect()
+        return (
+          rect.top <= 0 ||
+          rect.bottom >=
+            (windowHeight - rect.height || document.documentElement.clientHeight)
+        )
+      }
+
+      window.addEventListener('scroll', checkBoxPosition)
+      window.addEventListener('resize', update)
+
+      update()
+      checkBoxPosition()
+    },
+  },
 }
 </script>

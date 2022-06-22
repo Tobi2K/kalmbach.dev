@@ -141,7 +141,7 @@ export default {
       function isOutOfViewport(element) {
         const rect = element.getBoundingClientRect()
         return (
-          rect.top <= 0 ||
+          rect.top <= -100 ||
           rect.bottom >=
             (windowHeight - rect.height || document.documentElement.clientHeight)
         )

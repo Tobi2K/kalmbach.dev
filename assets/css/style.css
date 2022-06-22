@@ -132,14 +132,14 @@
 
 /* AboutMe.vue */
 .item-box-hidden {
-  transform: translateY(80px);
+  transform: translateY(40px);
   opacity: 0;
   animation: bounce-out 0.5s;
 }
 
 @keyframes bounce-in {
   0% {
-    transform: translateY(80px);
+    transform: translateY(40px);
   }
 
   50% {

@@ -158,12 +158,20 @@ export const projects = [
       '/images/project/top-tips/settings.png',
     ],
     link: 'https://github.com/Tobi2K/TopTips-App',
+    languages: [
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ionic/ionic-original.svg',
+    ]
   },
   {
     title: 'Mailspring Deep Marine',
     desc: 'Deep Marine is a basic dark blue theme for the <a class="underline" href="http://www.getmailspring.com/">Mailspring</a> email client.',
     images: ['/images/project/mailspring-deepmarine/custom-theme.png'],
     link: 'https://github.com/Tobi2K/mailspring-deepmarine',
+    languages: [
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/less/less-plain-wordmark.svg"
+    ]
   },
   {
     title: 'Autoencoder',
@@ -173,12 +181,20 @@ export const projects = [
       '/images/project/autoencoder/denoising_ae.svg',
     ],
     link: 'https://github.com/Tobi2K/SeminarNI',
+    languages: [
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg'
+    ]
   },
   {
     title: 'GitLab compatible ktlint reporter',
     desc: 'ktlint is a simple linter for Kotlin. There are many built-in linting reporters (with different output formats) and several custom reporters for ktlint. We used GitLab and Kotlin in a university project, however no correctly formatted reporter existed, so I decided to write this one. This correctly formatted output can be used in GitLab CI to automatically highlight lint errors with information like file or line number as seen above.',
     images: ['/images/project/ktlint-reporter/code_quality.png'],
     link: 'https://github.com/Tobi2K/ktlint-gitlab-reporter',
+    languages: [
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gradle/gradle-plain.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg'
+    ]
   },
   {
     title: 'Text Analytics - Party Programs',
@@ -189,6 +205,10 @@ export const projects = [
       '/images/project/tadl/transformer.png',
     ],
     link: 'https://github.com/Tobi2K/TextAnalytics-Party-Programs',
+    languages: [
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg'
+    ]
   },
   {
     title: 'Text Analytics - Web Interface',
@@ -199,5 +219,9 @@ export const projects = [
       '/images/project/tadl/web_3.png',
     ],
     link: 'https://github.com/Tobi2K/TADL-webpage',
+    languages: [
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg',
+    ]
   },
 ]

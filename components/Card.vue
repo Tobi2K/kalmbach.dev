@@ -1,5 +1,5 @@
 <template>
-  <div class="shadow-lg p-4 rounded-md bg-slate-100 relative mb-5 md:mb-0">
+  <div class="shadow-lg p-4 rounded-md bg-slate-100 relative mb-5 md:mb-0 flex  flex-col">
     <h4 class="text-center font-light text-xl mb-4">{{ info.title }}</h4>
     <a
       v-if="info.link"
@@ -12,6 +12,7 @@
     <Slider v-if="info.images.length !== 0" :images="info.images" />
     <!-- eslint-disable-next-line vue/no-v-html -->
     <p class="mt-4"><span v-html="info.desc" /></p>
+    <ProjectLanguages v-if="info.languages" :languages="info.languages" />
   </div>
 </template>
 

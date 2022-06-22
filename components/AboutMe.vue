@@ -1,8 +1,5 @@
 <template>
-  <div
-    id="about-me"
-    class="relative items-center pt-0 section-header my-16"
-  >
+  <div id="about-me" class="relative items-center pt-0 section-header my-16">
     <div class="container mx-auto sm:px-6 lg:px-8 mt-4">
       <div class="overflow-hidden p-6 shadow rounded">
         <h1 class="text-center font-semibold text-3xl font-sans underline mb-4">
@@ -133,8 +130,7 @@ export default {
           rect.left >= 0 &&
           rect.bottom <=
             (windowHeight + 80 || document.documentElement.clientHeight) &&
-          rect.right <=
-            (windowWidth || document.documentElement.clientWidth)
+          rect.right <= (windowWidth || document.documentElement.clientWidth)
         )
       }
 
@@ -143,7 +139,8 @@ export default {
         return (
           rect.top <= -100 ||
           rect.bottom >=
-            (windowHeight - rect.height || document.documentElement.clientHeight)
+            (windowHeight - rect.height ||
+              document.documentElement.clientHeight)
         )
       }
 

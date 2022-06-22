@@ -1,5 +1,7 @@
 <template>
-  <div class="shadow-lg p-4 rounded-md bg-slate-100 relative mb-5 md:mb-0 flex  flex-col">
+  <div
+    class="shadow-lg p-4 rounded-md bg-slate-100 relative mb-5 md:mb-0 flex flex-col"
+  >
     <h4 class="text-center font-light text-xl mb-4">{{ info.title }}</h4>
     <a
       v-if="info.link"

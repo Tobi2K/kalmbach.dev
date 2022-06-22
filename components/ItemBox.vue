@@ -1,5 +1,7 @@
 <template>
-  <div class="item-box rounded-lg bg-gray-100 p-4 grid grid-cols-4 item-box-hidden">
+  <div
+    class="item-box rounded-lg bg-gray-100 p-4 grid grid-cols-4 item-box-hidden"
+  >
     <img :key="alt" :src="link" />
     <div class="m-auto col-span-3">{{ title }}</div>
   </div>

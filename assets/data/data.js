@@ -162,7 +162,7 @@ export const projects = [
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ionic/ionic-original.svg',
-    ]
+    ],
   },
   {
     title: 'Mailspring Deep Marine',
@@ -170,8 +170,8 @@ export const projects = [
     images: ['/images/project/mailspring-deepmarine/custom-theme.png'],
     link: 'https://github.com/Tobi2K/mailspring-deepmarine',
     languages: [
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/less/less-plain-wordmark.svg"
-    ]
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/less/less-plain-wordmark.svg',
+    ],
   },
   {
     title: 'Autoencoder',
@@ -183,8 +183,8 @@ export const projects = [
     link: 'https://github.com/Tobi2K/SeminarNI',
     languages: [
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
-      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg'
-    ]
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg',
+    ],
   },
   {
     title: 'GitLab compatible ktlint reporter',
@@ -193,8 +193,8 @@ export const projects = [
     link: 'https://github.com/Tobi2K/ktlint-gitlab-reporter',
     languages: [
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gradle/gradle-plain.svg',
-      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg'
-    ]
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg',
+    ],
   },
   {
     title: 'Text Analytics - Party Programs',
@@ -207,8 +207,8 @@ export const projects = [
     link: 'https://github.com/Tobi2K/TextAnalytics-Party-Programs',
     languages: [
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
-      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg'
-    ]
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg',
+    ],
   },
   {
     title: 'Text Analytics - Web Interface',
@@ -222,6 +222,6 @@ export const projects = [
     languages: [
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg',
-    ]
+    ],
   },
 ]

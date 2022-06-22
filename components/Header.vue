@@ -55,7 +55,9 @@
           </div>
         </div>
 
-        <div class="icon-list justify-center items-center col-span-2 hidden md:flex">
+        <div
+          class="icon-list justify-center items-center col-span-2 hidden md:flex"
+        >
           <div class="single-icon in">
             <span>
               <FAIcon icon="fa-brands fa-html5" />

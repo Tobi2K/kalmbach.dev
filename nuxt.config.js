@@ -8,7 +8,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Tobias Kalmbach - Portfolio',
+    title: 'Portfolio & more | Tobias Kalmbach | Software Engineer',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -25,7 +25,7 @@ export default {
       {
         hid: 'og-title',
         property: 'og:title',
-        content: 'Tobias Kalmbach - Portfolio',
+        content: 'Portfolio & more | Tobias Kalmbach | Software Engineer',
       },
       {
         hid: 'og-description',
@@ -38,7 +38,7 @@ export default {
       {
         hid: 'twitter-title',
         property: 'twitter:title',
-        content: 'Tobias Kalmbach - Portfolio',
+        content: 'Portfolio & more | Tobias Kalmbach | Software Engineer',
       },
       {
         hid: 'twitter-description',

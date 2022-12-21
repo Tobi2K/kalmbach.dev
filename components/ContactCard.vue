@@ -31,21 +31,6 @@
           placeholder=""
         ></textarea>
       </label>
-      <div class="grid grid-cols-2">
-        <span
-          class="grid justify-items-end items-center text-xl tabular-nums pr-4"
-          >{{ equation }} =</span
-        >
-        <label class="block">
-          <input
-            id="answer"
-            v-model="answer"
-            type="text"
-            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-            placeholder="Answer"
-          />
-        </label>
-      </div>
     </div>
     <div class="grid grid-cols-2 py-4">
       <div class="grid justify-items-center items-center m-auto px-2">
@@ -71,9 +56,6 @@ export default {
       fullName: '',
       email: '',
       comment: '',
-      equation: '',
-      answer: null,
-      correct: 0,
       infoText: '',
       errorText: '',
     }
@@ -88,20 +70,8 @@ export default {
     comment() {
       this.removeClasses('comment')
     },
-    answer() {
-      this.removeClasses('answer')
-    },
-  },
-  mounted() {
-    this.equation = this.generateEquation()
   },
   methods: {
-    generateEquation() {
-      const number1 = Math.floor(Math.random() * 10) + 1
-      const number2 = Math.floor(Math.random() * 10) + 1
-      this.correct = number1 + number2
-      return number1 + ' + ' + number2
-    },
     removeClasses(id) {
       document
         .getElementById(id)
@@ -139,7 +109,6 @@ export default {
       this.email = ''
       this.comment = ''
       this.answer = null
-      this.equation = this.generateEquation()
     },
     submit() {
       let filled = true
@@ -164,11 +133,6 @@ export default {
         filled = false
         this.editClasses('comment')
       }
-      if (this.correct !== Number(this.answer)) {
-        filled = false
-        this.editClasses('answer')
-      }
-
       if (filled && emailOk) {
         document.getElementById('loader').classList.remove('hidden')
         const information = {

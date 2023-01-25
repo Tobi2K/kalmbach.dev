@@ -58,6 +58,19 @@
         >
       </div>
     </div>
+    <div class="grid grid-cols-10">
+      <div
+        class="col-span-2 grid justify-items-center items-center aspect-square"
+      >
+        <FAIcon
+          class="rounded-full bg-gray-200 p-2 aspect-square"
+          icon="fa-brands fa-discord"
+        />
+      </div>
+      <div class="col-span-8 grid items-center pl-2">
+        <p>Tobi2K#1234</p>
+      </div>
+    </div>
   </div>
 </template>
 

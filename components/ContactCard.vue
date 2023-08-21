@@ -140,8 +140,8 @@ export default {
           email: this.email,
           comment: this.comment,
         }
-
-        fetch('https://api.kalmbach.dev/mail', {
+        
+        fetch(this.$config.POST_URL, {
           method: 'POST',
           body: JSON.stringify(information),
           headers: {

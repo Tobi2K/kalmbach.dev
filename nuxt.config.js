@@ -20,7 +20,7 @@ export default {
       },
       { name: 'author', content: 'Tobias Kalmbach' },
       { name: 'application-name', content: 'Tobias Kalmbach' },
-
+      { name: 'google-adsense-account', content: 'ca-pub-1622848203679095' },
       { hid: 'og-type', property: 'og:type', content: 'website' },
       {
         hid: 'og-title',

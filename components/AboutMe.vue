@@ -12,12 +12,13 @@
           <div class="w-full">
             I started coding around 2016 and I am mostly self-taught. I began
             with simple web development and later on branched out into app
-            development and data science. I'm currently studying Software
-            Engineering at
+            development and data science. I studied Software Engineering (Bachelor of Science) at
             <a class="underline" href="https://www.uni-ulm.de/" target="_blank">
               University Ulm
             </a>
-            where I focus on data science as well. <br />
+            where I focused on data science as well. Currently I'm studying Computer Science (Master of Science) at 
+            <a href="https://www.uni-hannover.de/en/">Leibniz University Hannover.</a>
+            <br />
             <br />
             Feel free to take a look at my preferred languages and tools below
             or my <a class="underline" href="#projects">projects</a>.

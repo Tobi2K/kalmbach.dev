@@ -18,6 +18,10 @@
           >tailwind
         </a>
       </span>
+      <br />
+      <span>
+        <a href="https://kalmbach.dev/privacy.html">Privacy Policy</a>
+      </span>
     </div>
   </footer>
 </template>

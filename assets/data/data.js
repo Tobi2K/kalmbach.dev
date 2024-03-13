@@ -68,7 +68,7 @@ export const frameworks = [
     title: 'Node.js',
   },
   {
-    link: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gradle/gradle-plain.svg',
+    link: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gradle/gradle-original.svg',
     alt: 'gradle',
     title: 'Gradle',
   },
@@ -83,7 +83,7 @@ export const frameworks = [
     title: 'Ionic',
   },
   {
-    link: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-plain.svg',
+    link: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nestjs/nestjs-original.svg',
     alt: 'nestjs',
     title: 'NestJS',
   },
@@ -98,7 +98,7 @@ export const frameworks = [
     title: 'Nuxt.js',
   },
   {
-    link: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg',
+    link: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg',
     alt: 'tailwindcss',
     title: 'tailwindcss',
   },

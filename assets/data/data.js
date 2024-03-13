@@ -192,7 +192,7 @@ export const projects = [
     images: ['/images/project/ktlint-reporter/code_quality.png'],
     link: 'https://github.com/Tobi2K/ktlint-gitlab-reporter',
     languages: [
-      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gradle/gradle-plain.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gradle/gradle-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg',
     ],
   },

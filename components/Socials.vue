@@ -68,7 +68,7 @@
         />
       </div>
       <div class="col-span-8 grid items-center pl-2">
-        <p>Tobi2K#1234</p>
+        <p>tobi2k</p>
       </div>
     </div>
   </div>

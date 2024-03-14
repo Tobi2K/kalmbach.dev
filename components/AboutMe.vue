@@ -17,7 +17,7 @@
               University Ulm
             </a>
             where I focused on data science as well. Currently I'm studying Computer Science (Master of Science) at 
-            <a href="https://www.uni-hannover.de/en/">Leibniz University Hannover.</a>
+            <a class="underline" href="https://www.uni-hannover.de/en/">Leibniz University Hannover.</a>
             <br />
             <br />
             Feel free to take a look at my preferred languages and tools below

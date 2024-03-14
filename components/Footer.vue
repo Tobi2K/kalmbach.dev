@@ -20,7 +20,7 @@
       </span>
       <br />
       <span>
-        <a href="https://kalmbach.dev/privacy.html">Privacy Policy</a> | <a href="https://kalmbach.dev/imprint.html">Imprint</a>
+        <a class="underline" href="https://kalmbach.dev/privacy.html">Privacy Policy</a> | <a class="underline" href="https://kalmbach.dev/imprint.html">Imprint</a>
       </span>
     </div>
   </footer>

@@ -20,9 +20,9 @@
             I'm a more-or-less Full-Stack Developer.
           </h2>
           <p class="mt-3">
-            Currently, I'm studying Software Engineering in Southern Germany.
+            Currently, I'm studying Computer Science in Germany.
             <br />
-            I'm intereseted in Data Science and Theoretical Computer Science.
+            I'm intereseted in everything Data Science, Machine Learning and Theoretical Computer Science.
           </p>
           <div class="mt-4">
             <a

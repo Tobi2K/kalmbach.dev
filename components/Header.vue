@@ -17,7 +17,7 @@
             </h1>
           </header>
           <h2 class="text-2xl leading-7 font-semibold">
-            I'm a more-or-less Full-Stack Developer.
+            I'm trying to teach computers how to solve problems.
           </h2>
           <p class="mt-3">
             Currently, I'm studying Computer Science in Germany.
@@ -26,7 +26,7 @@
           </p>
           <div class="mt-4">
             <a
-              href="mailto:t.kalmbach35@gmail.com"
+              href="mailto:tobias@kalmbach.dev"
               class="px-3 rounded py-1 text-3xl"
             >
               <FAIcon icon="fa-solid fa-envelope" />

@@ -13,4 +13,4 @@ This is the code for my simple Portfolio [webpage](https://www.kalmbach.dev). Cr
 
 > [kalmbach.dev](https://www.kalmbach.dev) &nbsp;&middot;&nbsp;
 > GitHub [@Tobi2K](https://github.com/Tobi2K) &nbsp;&middot;&nbsp;
-> Email [t.kalmbach35@gmail.com](mailto:t.kalmbach35@gmail.com)
+> Email [tobias@kalmbach.dev](mailto:tobias@kalmbach.dev)

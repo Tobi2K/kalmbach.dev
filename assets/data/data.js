@@ -136,6 +136,11 @@ export const tools = [
     title: 'Docker',
   },
   {
+    link: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg',
+    alt: 'pytorch',
+    title: 'PyTorch',
+  },
+  {
     link: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg',
     alt: 'tensorflow',
     title: 'TensorFlow',

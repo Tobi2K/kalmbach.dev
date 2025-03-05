@@ -12,7 +12,7 @@
         />
       </div>
       <div class="col-span-8 grid items-center pl-2">
-        <a href="mailto:t.kalmbach35@gmail.com">t.kalmbach35@gmail.com</a>
+        <a href="mailto:tobias@kalmbach.dev">tobias@kalmbach.dev</a>
       </div>
     </div>
     <div class="grid grid-cols-10">

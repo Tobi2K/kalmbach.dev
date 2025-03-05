@@ -16,11 +16,11 @@
             <a class="underline" href="https://www.uni-ulm.de/" target="_blank">
               University Ulm
             </a>
-            where I focused on data science as well. Currently I'm studying Computer Science (Master of Science) at 
+            where I focused on data science as well. Currently I'm studying Computer Science (Master of Science) at
             <a class="underline" href="https://www.uni-hannover.de/en/">Leibniz University Hannover.</a>
             <br />
             <br />
-            Feel free to take a look at my preferred languages and tools below
+            Feel free to take a look at the languages and tools I've used below
             or my <a class="underline" href="#projects">projects</a>.
           </div>
         </div>

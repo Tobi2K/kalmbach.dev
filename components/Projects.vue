@@ -15,19 +15,34 @@
             :info="project"
           />
         </div>
+        <br>
+        <h3 class="text-center font-semibold text-2xl font-sans underline">
+          Other Projects
+        </h3>
+        <h3 class="text-center text-md font-sans">
+          These projects are some smaller or non-public projects.
+        </h3>
+        <div class="grid md:grid-cols-3 md:gap-4 mt-8">
+          <Card
+            v-for="project in projectsOther"
+            :key="project.title"
+            :info="project"
+          />
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import { projects } from '~/assets/data/data'
+import { projects, projectsOther } from '~/assets/data/data'
 
 export default {
   name: 'MyProjects',
   data() {
     return {
       projects,
+      projectsOther
     }
   },
 }

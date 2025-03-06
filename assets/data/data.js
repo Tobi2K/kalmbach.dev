@@ -141,6 +141,11 @@ export const tools = [
     title: 'PyTorch',
   },
   {
+    link: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jupyter/jupyter-original-wordmark.svg',
+    alt: 'jupyter',
+    title: 'Jupyter',
+  },
+  {
     link: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg',
     alt: 'tensorflow',
     title: 'TensorFlow',
@@ -227,6 +232,69 @@ export const projects = [
     languages: [
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg',
+    ],
+  },
+]
+
+export const projectsOther = [
+  {
+    title: 'Discord Bots',
+    desc: 'I created a few Discord bots notification system or easy role assignment on servers.',
+    images: [],
+    languages: [
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/discordjs/discordjs-original.svg',
+    ],
+  },
+  {
+    title: 'Scheduling software',
+    desc: 'I coded a script and webpage to assign workspaces based on preferences and availability. You can assign workspaces as `important` to always fill these spaces.',
+    images: [],
+    link: 'https://schedule.kalmbach.dev/',
+    languages: [
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
+    ],
+  },
+  {
+    title: 'Statistics Extration',
+    desc: 'As part of my Bachelor\'s Thesis, I worked on and extended a project to automatically extract and grade statistics reported in scientific publications.',
+    images: [],
+    link: 'https://github.com/Tobi2K/statistics-extraction',
+    languages: [
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jupyter/jupyter-original-wordmark.svg',
+    ],
+  },
+  {
+    title: 'Deep Learning Tasks',
+    desc: 'During my studies I worked on several tasks concering Deep Learning using, for example,embedding models, CNNs, RNNs, and DCGANs. Some tasks include reinforcement learning, image segmentation, natural language inference, image synthesis, etc.',
+    images: [],
+    // link: 'https://github.com/Tobi2K/ktlint-gitlab-reporter',
+    languages: [
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg',
+    ],
+  },
+  {
+    title: 'Guessing game',
+    desc: 'I built a small application to learn capital cities of flags of countries. You can also learn the Greek alphabet. The app is work-in-progress, but I plan to publish it soon.',
+    images: [],
+    link: '',
+    languages: [
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg',
+    ],
+  },
+  {
+    title: 'LLM Applications',
+    desc: 'As a part of my research assistant job, I was involved in many projects concerning LLMs with the focus of question answering. I looked at the capabilities of LLMs when answering moral dilemmas, factual vs. multiple choice questions, providing an answer even when that answer is incorrect, and the false confidence reported by LLMs. Most of these projects are not public, but I\'d be happy to have a chat with you about these topics. Just reach out down below.',
+    images: [],
+    link: 'https://github.com/Tobi2K/Moral-QA-LLMs',
+    languages: [
+      'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
+      'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg',
     ],
   },
 ]

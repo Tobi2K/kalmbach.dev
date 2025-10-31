@@ -1,4 +1,4 @@
-FROM node:14
+FROM node:25
 
 ENV APP_PORT 8080
 

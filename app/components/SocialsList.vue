@@ -1,7 +1,5 @@
 <template>
-  <div class="col-span-10 md:col-span-4 px-6">
-    <h2 class="text-xl text-center mb-4">General Information</h2>
-    <hr />
+  <div class="col-span-10 px-6">
     <div class="grid grid-cols-10">
       <div
         class="col-span-2 grid justify-items-center items-center aspect-square"

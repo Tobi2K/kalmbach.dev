@@ -1,4 +1,4 @@
-export default {
+export default defineNuxtConfig({
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
@@ -65,33 +65,40 @@ export default {
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
-  // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [
-    // https://go.nuxtjs.dev/typescript
-    '@nuxt/typescript-build',
+  // Modules: https://go.nuxtjs.dev/config-modules
+  modules: [
+    '@vite-pwa/nuxt',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
   ],
 
-  // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [
-    // https://go.nuxtjs.dev/axios
-    '@nuxtjs/axios',
-    // https://go.nuxtjs.dev/pwa
-    '@nuxtjs/pwa',
-  ],
-
-  // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {
-    // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
-    baseURL: '/',
-  },
+  // // Axios module configuration: https://go.nuxtjs.dev/config-axios
+  // axios: {
+  //   // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
+  //   baseURL: '/',
+  // },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
+    registerType: 'autoUpdate',
     manifest: {
-      lang: 'en',
+      name: 'Portfolio & more',
+      short_name: 'Portfolio',
+      description: 'Portfolio website of Tobias Kalmbach, Software Engineer',
+      theme_color: '#ffffff',
     },
+    workbox: {
+      navigateFallback: '/',
+      globPatterns: ['**/*.{js,css,html,png,svg,ico}']
+    },
+    client: {
+      installPrompt: true,
+      // periodicSyncForUpdates: 20
+    },
+    devOptions: {
+      enabled: true,
+      type: 'module'
+    }
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
@@ -100,4 +107,4 @@ export default {
   publicRuntimeConfig: {
     POST_URL: process.env.POST,
   }
-}
+})

@@ -11,21 +11,18 @@
     >
       <FAIcon class="rounded-full bg-white p-2" icon="fa-brands fa-github" />
     </a>
-    <Slider v-if="info.images.length !== 0" :images="info.images" />
+    <SliderImages v-if="info.images.length !== 0" :images="info.images" />
     <!-- eslint-disable-next-line vue/no-v-html -->
     <p class="mt-4"><span v-html="info.desc" /></p>
     <ProjectLanguages v-if="info.languages" :languages="info.languages" />
   </div>
 </template>
 
-<script>
-export default {
-  name: 'ProjectCard',
-  props: {
-    info: {
-      type: Object,
-      required: true,
-    },
-  },
-}
+<script setup>
+defineProps({
+  info: {
+    type: Object,
+    required: true
+  }
+})
 </script>

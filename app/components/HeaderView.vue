@@ -102,48 +102,46 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'HeaderJumbotron',
-  mounted() {
-    const list = document.getElementsByClassName('single-icon')
-    const timePerItem = 3500
-    const timeBetweenItems = 500
-    function nextItem(index) {
-      let isNotLast = false
+<script setup>
+import { onMounted } from 'vue'
 
-      if (index !== list.length - 1) {
-        isNotLast = true
-      }
+onMounted(() => {
+  const list = document.getElementsByClassName('single-icon')
+  const timePerItem = 3500
+  const timeBetweenItems = 500
+  function nextItem(index) {
+    let isNotLast = false
 
-      setTimeout(function () {
-        list.item(index).classList.remove('in')
-        list.item(index).classList.add('out')
-        setTimeout(function () {
-          list.item(index).classList.remove('out')
-          if (isNotLast) {
-            list.item(index + 1).classList.add('in')
-            nextItem(index + 1)
-          } else {
-            list.item(0).classList.add('in')
-            nextItem(0)
-          }
-        }, timeBetweenItems)
-      }, timePerItem)
+    if (index !== list.length - 1) {
+      isNotLast = true
     }
-    nextItem(0)
-  },
-  methods: {
-    scrollDown() {
-      const element = document.getElementById('about-me')
-      const topOfElementWithOffset =
-        element.getBoundingClientRect().top + window.pageYOffset - 50
 
-      window.scrollTo({
-        top: topOfElementWithOffset,
-        behavior: 'smooth',
-      })
-    },
-  },
+    setTimeout(function () {
+      list.item(index).classList.remove('in')
+      list.item(index).classList.add('out')
+      setTimeout(function () {
+        list.item(index).classList.remove('out')
+        if (isNotLast) {
+          list.item(index + 1).classList.add('in')
+          nextItem(index + 1)
+        } else {
+          list.item(0).classList.add('in')
+          nextItem(0)
+        }
+      }, timeBetweenItems)
+    }, timePerItem)
+  }
+  nextItem(0)
+})
+
+const scrollDown = () => {
+  const element = document.getElementById('about-me')
+  const topOfElementWithOffset =
+    element.getBoundingClientRect().top + window.pageYOffset - 50
+
+  window.scrollTo({
+    top: topOfElementWithOffset,
+    behavior: 'smooth',
+  })
 }
 </script>

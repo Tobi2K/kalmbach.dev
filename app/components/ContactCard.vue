@@ -48,7 +48,9 @@
   </div>
 </template>
 
-<script>
+<script setup>
+
+
 export default {
   name: 'ContactCard',
   data() {
@@ -140,7 +142,7 @@ export default {
           email: this.email,
           comment: this.comment,
         }
-        
+
         fetch(this.$config.POST_URL, {
           method: 'POST',
           body: JSON.stringify(information),

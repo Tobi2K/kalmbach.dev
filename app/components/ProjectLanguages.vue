@@ -8,14 +8,11 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'ProjectCard',
-  props: {
-    languages: {
-      type: Array,
-      required: true,
-    },
-  },
-}
+<script setup>
+defineProps({
+  languages: {
+    type: Array,
+    required: true,
+  }
+})
 </script>

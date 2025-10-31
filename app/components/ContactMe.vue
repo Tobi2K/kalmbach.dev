@@ -9,8 +9,7 @@
           <h2 class="text-2xl font-semibold">Contact me</h2>
         </header>
         <div class="grid grid-cols-10">
-          <ContactCard />
-          <Socials />
+          <SocialsList />
         </div>
       </div>
     </div>
@@ -60,8 +59,5 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'ContactMe',
-}
+<script setup>
 </script>

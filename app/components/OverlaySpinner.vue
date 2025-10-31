@@ -21,30 +21,29 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'LoadingOverlay',
-  mounted() {
-    if (document.readyState !== 'loading') {
-      this.loading()
-    } else {
-      document.addEventListener('DOMContentLoaded', this.loading(), false)
-    }
-  },
-  methods: {
-    loading() {
-      setTimeout(function () {
-        document.getElementById('overlay').classList.add('hidden')
+<script setup>
+import { onMounted } from 'vue';
 
-        const waveList = document.getElementById('wave').classList
-        setTimeout(function () {
-          waveList.add('animate-wave')
-          setTimeout(function () {
-            waveList.remove('animate-wave')
-          }, 1000)
-        }, 500)
+
+onMounted(() => {
+  if (document.readyState !== 'loading') {
+    loading()
+  } else {
+    document.addEventListener('DOMContentLoaded', loading(), false)
+  }
+});
+
+const loading = () => {
+  setTimeout(function () {
+    document.getElementById('overlay').classList.add('hidden')
+
+    const waveList = document.getElementById('wave').classList
+    setTimeout(function () {
+      waveList.add('animate-wave')
+      setTimeout(function () {
+        waveList.remove('animate-wave')
       }, 1000)
-    },
-  },
+    }, 500)
+  }, 1000)
 }
 </script>

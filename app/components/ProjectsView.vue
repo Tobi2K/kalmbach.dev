@@ -9,7 +9,7 @@
           Projects
         </h1>
         <div class="grid md:grid-cols-3 md:gap-4 mt-8">
-          <Card
+          <ProjectCard
             v-for="project in projects"
             :key="project.title"
             :info="project"
@@ -23,7 +23,7 @@
           These projects are some smaller or non-public projects.
         </h3>
         <div class="grid md:grid-cols-3 md:gap-4 mt-8">
-          <Card
+          <ProjectCard
             v-for="project in projectsOther"
             :key="project.title"
             :info="project"
@@ -34,16 +34,7 @@
   </div>
 </template>
 
-<script>
-import { projects, projectsOther } from '~/assets/data/data'
+<script setup>
+import { projects, projectsOther } from 'assets/data/data'
 
-export default {
-  name: 'MyProjects',
-  data() {
-    return {
-      projects,
-      projectsOther
-    }
-  },
-}
 </script>

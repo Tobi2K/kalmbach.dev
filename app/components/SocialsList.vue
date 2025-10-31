@@ -74,8 +74,6 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'MySocials',
-}
+<script setup>
+
 </script>

@@ -16,8 +16,9 @@
             <a class="underline" href="https://www.uni-ulm.de/" target="_blank">
               University Ulm
             </a>
-            where I focused on data science as well. Currently I'm studying Computer Science (Master of Science) at
+            where I focused on data science as well. I did my Master in Computer Science (Master of Science) at
             <a class="underline" href="https://www.uni-hannover.de/en/">Leibniz University Hannover.</a>
+            In Hannover, I am also pursuing my PhD in Computer Science with a focus on interpretability and safety of LLMs.
             <br />
             <br />
             Feel free to take a look at the languages and tools I've used below

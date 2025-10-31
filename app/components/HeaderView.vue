@@ -20,7 +20,7 @@
             I'm trying to teach computers how to solve problems.
           </h2>
           <p class="mt-3">
-            Currently, I'm studying Computer Science in Germany.
+            Currently, I'm doing my PhD in Computer Science in Germany.
             <br />
             I'm intereseted in everything Data Science, Machine Learning and Theoretical Computer Science.
           </p>

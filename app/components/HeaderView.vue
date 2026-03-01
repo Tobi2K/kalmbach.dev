@@ -17,12 +17,15 @@
             </h1>
           </header>
           <h2 class="text-2xl leading-7 font-semibold">
-            I'm trying to teach computers how to solve problems.
+            I'm currently doing my PhD in Computer Science in Germany at the L3S Research Center.
           </h2>
           <p class="mt-3">
-            Currently, I'm doing my PhD in Computer Science in Germany.
-            <br />
-            I'm intereseted in everything Data Science, Machine Learning and Theoretical Computer Science.
+            My research centers on LLMs and understanding and interpreting them.
+            I am also working on the <a href="https://www.soofi.info" style="text-decoration: underline;">soofi</a> project, where I'm responsible for multilingual reasoning and safety of post-trained LLMs.
+            <br>
+            Otherwise I'm intereseted in everything Data Science, Machine Learning and Theoretical Computer Science.
+            <br>
+            If you are interested in discussing any of these topics, hit me up!
           </p>
           <div class="mt-4">
             <a
@@ -52,6 +55,20 @@
             >
               <FAIcon icon="fa-brands fa-linkedin" />
             </a>
+            <a
+              href="https://orcid.org/0009-0005-7447-2195"
+              target="_blank"
+              class="px-3 rounded py-1 text-3xl"
+            >
+              <FAIcon icon="fa-brands fa-orcid" />
+            </a>
+            <a
+              href="https://scholar.google.com/citations?user=C4hVRTkAAAAJ"
+              target="_blank"
+              class="px-3 rounded py-1 text-3xl"
+            >
+              <FAIcon icon="fa-brands fa-google-scholar" />
+            </a>
           </div>
         </div>
 
@@ -60,19 +77,31 @@
         >
           <div class="single-icon in">
             <span>
-              <FAIcon icon="fa-brands fa-html5" />
+              <FAIcon icon="fa-brands fa-terminal" />
             </span>
           </div>
 
           <div class="single-icon">
             <span>
-              <FAIcon icon="fa-brands fa-css3-alt" />
+              <FAIcon icon="fa-brands fa-linux" />
             </span>
           </div>
 
           <div class="single-icon">
             <span>
               <FAIcon icon="fa-brands fa-js" />
+            </span>
+          </div>
+
+          <div class="single-icon">
+            <span>
+              <FAIcon icon="fa-brands fa-typescript" />
+            </span>
+          </div>
+
+          <div class="single-icon">
+            <span>
+              <FAIcon icon="fa-brands fa-vuejs" />
             </span>
           </div>
 
@@ -90,7 +119,25 @@
 
           <div class="single-icon">
             <span>
-              <FAIcon icon="fa-brands fa-vuejs" />
+              <FAIcon icon="fa-brands fa-hugging-face" />
+            </span>
+          </div>
+
+          <div class="single-icon">
+            <span>
+              <FAIcon icon="fa-brands fa-tex" />
+            </span>
+          </div>
+
+          <div class="single-icon">
+            <span>
+              <FAIcon icon="fa-brands fa-git-alt" />
+            </span>
+          </div>
+
+          <div class="single-icon">
+            <span>
+              <FAIcon icon="fa-brands fa-tailwind-css" />
             </span>
           </div>
         </div>

@@ -4,6 +4,7 @@
     <NavBar />
     <HeaderView />
     <AboutMe />
+    <PublicationsView />
     <ProjectsView />
     <ContactMe />
     <FooterBar />

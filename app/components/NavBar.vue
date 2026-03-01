@@ -17,6 +17,12 @@
         About me
       </a>
       <a
+        href="#publications"
+        class="inline-block px-2 md:px-6 py-2.5 bg-transparent rounded hover:underline nav-link"
+      >
+        Publications
+      </a>
+      <a
         href="#projects"
         class="inline-block px-2 md:px-6 py-2.5 bg-transparent rounded hover:underline nav-link"
       >

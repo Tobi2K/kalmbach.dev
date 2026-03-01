@@ -2,10 +2,10 @@
   <div class="col-span-10 px-6">
     <div class="grid grid-cols-10">
       <div
-        class="col-span-2 grid justify-items-center items-center aspect-square"
+        class="col-span-2 grid justify-items-center items-center py-4"
       >
         <FAIcon
-          class="rounded-full bg-gray-200 p-2 aspect-square"
+          class="rounded-full bg-gray-200 p-2"
           icon="fa-solid fa-envelope"
         />
       </div>
@@ -15,10 +15,10 @@
     </div>
     <div class="grid grid-cols-10">
       <div
-        class="col-span-2 grid justify-items-center items-center aspect-square"
+        class="col-span-2 grid justify-items-center items-center py-4"
       >
         <FAIcon
-          class="rounded-full bg-gray-200 p-2 aspect-square"
+          class="rounded-full bg-gray-200 p-2"
           icon="fa-brands fa-github"
         />
       </div>
@@ -28,10 +28,10 @@
     </div>
     <div class="grid grid-cols-10">
       <div
-        class="col-span-2 grid justify-items-center items-center aspect-square"
+        class="col-span-2 grid justify-items-center items-center py-4"
       >
         <FAIcon
-          class="rounded-full bg-gray-200 p-2 aspect-square"
+          class="rounded-full bg-gray-200 p-2"
           icon="fa-brands fa-stack-overflow"
         />
       </div>
@@ -43,10 +43,10 @@
     </div>
     <div class="grid grid-cols-10">
       <div
-        class="col-span-2 grid justify-items-center items-center aspect-square"
+        class="col-span-2 grid justify-items-center items-center py-4"
       >
         <FAIcon
-          class="rounded-full bg-gray-200 p-2 aspect-square"
+          class="rounded-full bg-gray-200 p-2"
           icon="fa-brands fa-linkedin"
         />
       </div>
@@ -58,10 +58,10 @@
     </div>
     <div class="grid grid-cols-10">
       <div
-        class="col-span-2 grid justify-items-center items-center aspect-square"
+        class="col-span-2 grid justify-items-center items-center py-4"
       >
         <FAIcon
-          class="rounded-full bg-gray-200 p-2 aspect-square"
+          class="rounded-full bg-gray-200 p-2"
           icon="fa-brands fa-discord"
         />
       </div>

@@ -85,12 +85,6 @@
 import { onMounted } from 'vue'
 import { languages, frameworks, tools } from 'assets/data/data'
 
-defineProps({
-  info: {
-    type: Object,
-    required: true
-  }
-})
 
 const addAnimation = () => {
   let boxes

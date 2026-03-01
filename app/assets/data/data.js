@@ -162,10 +162,10 @@ export const projects = [
     title: 'Top Tips',
     desc: 'Top Tips is a lightweight guessing game for handball leagues. You can choose from more than 130 leagues in 25 countries as well as international leagues. <br>You can create groups for different leagues and seasons and play with your friends. <br><br> The app was built with Vue and Ionic. You can find the app on <a class="underline" href="https://play.google.com/store/apps/details?id=app.kalmbach.dev">Google Play</a> or on the <a class="underline" href="https://app.kalmbach.dev">web</a>.',
     images: [
-      '/images/project/top-tips/login.png',
+      // '/images/project/top-tips/login.png',
       '/images/project/top-tips/play.png',
-      '/images/project/top-tips/create_group.png',
-      '/images/project/top-tips/settings.png',
+      // '/images/project/top-tips/create_group.png',
+      // '/images/project/top-tips/settings.png',
     ],
     link: 'https://github.com/Tobi2K/TopTips-App',
     languages: [
@@ -187,7 +187,7 @@ export const projects = [
     title: 'Autoencoder',
     desc: 'This project encompasses autoencoders, more specifically denoising autoencoders. These autoencoders were used for a paper during my Bachelor studies and were trained to reconstruct (noisy) MNIST images. Tensorflow (i.e. keras) was the main library used for autoencoder construction and training.',
     images: [
-      '/images/project/autoencoder/denoising.png',
+      // '/images/project/autoencoder/denoising.png',
       '/images/project/autoencoder/denoising_ae.svg',
     ],
     link: 'https://github.com/Tobi2K/SeminarNI',
@@ -211,8 +211,8 @@ export const projects = [
     desc: 'As an exam substitute for a Text Analytics course we explored semi-automatic analysis of political parties, in this case major German political parties. We used the party manifestos and extracted topics using LDA and HDP, as well as BERT. All paragraphs of the manifestos were then categorized and each category summarized.',
     images: [
       '/images/project/tadl/cluster.png',
-      '/images/project/tadl/LDA.png',
-      '/images/project/tadl/transformer.png',
+      // '/images/project/tadl/LDA.png',
+      // '/images/project/tadl/transformer.png',
     ],
     link: 'https://github.com/Tobi2K/TextAnalytics-Party-Programs',
     languages: [
@@ -225,8 +225,8 @@ export const projects = [
     desc: 'As an easy way to interact with the results of the aforementioned text analytics project, we created a web interface. In this interface, each category displays anonymized summaries for each analyzed party. The user can rate these summaries and in the end receives a ranking of what party the user agrees most with.',
     images: [
       '/images/project/tadl/web_1.png',
-      '/images/project/tadl/web_2.png',
-      '/images/project/tadl/web_3.png',
+      // '/images/project/tadl/web_2.png',
+      // '/images/project/tadl/web_3.png',
     ],
     link: 'https://github.com/Tobi2K/TADL-webpage',
     languages: [
@@ -296,5 +296,26 @@ export const projectsOther = [
       'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
       'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg',
     ],
+  },
+]
+
+export const publications = [
+  {
+    title: "Evaluating LLMs'(In) ability to Follow Prompts in QA Tasks",
+    venue: 'Proceedings of the 48th International ACM SIGIR Conference on Research and Development in Information Retrieval',
+    year: '2025',
+    url: 'https://dl.acm.org/doi/10.1145/3726302.3730190',
+    citation: "Khatua, A., Kalmbach, T., Mitra, P., & Sikdar, S. (2025, July). Evaluating LLMs'(In) ability to Follow Prompts in QA Tasks. In Proceedings of the 48th International ACM SIGIR Conference on Research and Development in Information Retrieval (pp. 2941-2945).",
+    summary: 'This paper introduces Oedipus, an evaluation framework examining whether LLMs follow prompt instructions or default to their own parametric knowledge in question-answering tasks. Testing eight LLMs on a novel dataset with varied context types, the authors find that LLMs frequently fail to follow instructions and lack adequate self-reflection about the limits of their knowledge.',
+    authors: 'Aparup Khatua, Tobias Kalmbach, Prasenjit Mitra, Sandipan Sikdar'
+  },
+  {
+    title: 'On the rule-based extraction of statistics reported in scientific papers',
+    venue: 'International Conference on Applications of Natural Language to Information Systems',
+    year: '2023',
+    url: 'https://link.springer.com/chapter/10.1007/978-3-031-35320-8_23',
+    citation: 'Kalmbach, T., Hoffmann, M., Lell, N., Scherp, A. (2023). On the Rule-Based Extraction of Statistics Reported in Scientific Papers. In: Métais, E., Meziane, F., Sugumaran, V., Manning, W., Reiff-Marganiec, S. (eds) Natural Language Processing and Information Systems. NLDB 2023. Lecture Notes in Computer Science, vol 13913. Springer, Cham. https://doi.org/10.1007/978-3-031-35320-8_23',
+    summary: 'STEREO is a tool that extracts statistical reports from scientific papers using regular expressions, supporting both APA and non-APA formats, originally trained on life sciences preprints. The authors streamlined its rule set and successfully transferred it to the Human-Computer-Interaction domain with minimal new rules, while also finding that HCI papers contain far more APA-formatted statistics than life sciences papers and that source files yield more reliable extraction than PDFs.',
+    authors: 'Tobias Kalmbach, Marcel Hoffmann, Nicolas Lell, Ansgar Scherp'
   },
 ]
